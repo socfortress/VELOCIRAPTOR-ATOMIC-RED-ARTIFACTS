@@ -1294,9 +1294,9 @@ sources:
 
      LET RemoveLog <= if(condition=RemoveExecLog, then={ SELECT * FROM execve(argv=["pwsh", "Remove-Item", ExecutionLogFile])})
 
-     LET JustDoIt <= SELECT * FROM foreach(row=CommandsToRun, query={
+      LET JustDoIt <= SELECT * FROM foreach(row=CommandsToRun, query={
             SELECT * FROM execve(argv=[   'pwsh', '-exec', 'bypass',
-                                                '-Command', '''Import-Module Invoke-AtomicRedTeam''' + Command + ''' -GetPreReqs; ''' + Command + ''' -ExecutionLogPath ''' + ExecutionLogFile + ''';''' + if(condition=Cleanup, then=Command + ''' -Cleanup''', else='''''')
+                                                '-Command', '''Import-Module "/usr/local/share/powershell/Modules/Invoke-AtomicRedTeam/Invoke-AtomicRedTeam.psd1" -Force; ''' + Command + ''' -GetPreReqs; ''' + Command + ''' -ExecutionLogPath ''' + ExecutionLogFile + ''';''' + if(condition=Cleanup, then=Command + ''' -Cleanup''', else='''''')
                                             ])}
 
      )
