@@ -1292,7 +1292,7 @@ sources:
      ''')
      LET CommandsToRun <= if(condition=RunAll, then='''Invoke-AtomicTest All -Confirm:$false''', else={ SELECT Command FROM CommandTable WHERE get(field=Flag)})
 
-     LET RemoveLog <= if(condition=RemoveExecLog, then={ SELECT * FROM execve(argv=["pwsh", "Remove-Item", ExecutionLogFile])})
+     LET RemoveLog <= if(condition=RemoveExecLog, then={ SELECT * FROM execve(argv=["pwsh", "-Command", "Remove-Item", ExecutionLogFile])})
 
       LET JustDoIt <= SELECT * FROM foreach(row=CommandsToRun, query={
             SELECT * FROM execve(argv=[   'pwsh', '-exec', 'bypass',
