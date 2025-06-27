@@ -48,6 +48,11 @@ parameters:
     - name: ExecutionLogFile
       description: Path to log file (CSV) for executions by ART tests
       default: /tmp/ARTExec.csv
+      
+    - name: EnsureExecLog
+      description: Create ExecutionLogFile if it does not exist first
+      default: Y
+      type: bool
 
     - name: RemoveExecLog
       description: Remove execution log before running artifact (in the event we don't want to intertwine results from previous tests)
@@ -1285,18 +1290,34 @@ sources:
      T1048.003 - 1,"Invoke-AtomicTest T1048.003 -TestNumbers 1"
      T1048.003 - 3,"Invoke-AtomicTest T1048.003 -TestNumbers 3"
      T1048.003 - 8,"Invoke-AtomicTest T1048.003 -TestNumbers 8"
-     T1053.003 - 1,Invoke-AtomicTest T1053.003 -TestNumbers 1
-     T1053.003 - 2,Invoke-AtomicTest T1053.003 -TestNumbers 2
-     T1053.003 - 3,Invoke-AtomicTest T1053.003 -TestNumbers 3
-     T1053.003 - 4,Invoke-AtomicTest T1053.003 -TestNumbers 4
+     T1053.003 - 1,"Invoke-AtomicTest T1053.003 -TestNumbers 1"
+     T1053.003 - 2,"Invoke-AtomicTest T1053.003 -TestNumbers 2"
+     T1053.003 - 3,"Invoke-AtomicTest T1053.003 -TestNumbers 3"
+     T1053.003 - 4,"Invoke-AtomicTest T1053.003 -TestNumbers 4"
      ''')
      LET CommandsToRun <= if(condition=RunAll, then='''Invoke-AtomicTest All -Confirm:$false''', else={ SELECT Command FROM CommandTable WHERE get(field=Flag)})
 
      LET RemoveLog <= if(condition=RemoveExecLog, then={ SELECT * FROM execve(argv=["pwsh", "-Command", "Remove-Item", ExecutionLogFile])})
+     
+     LET EnsureExecutionLog <= if(
+           condition = EnsureExecLog,                  
+           then      = {
+               SELECT * FROM execve(
+                   argv=[
+                       'pwsh', '-exec', 'bypass',
+                       '-Command',
+                       '''if (-not (Test-Path -Path "''' + ExecutionLogFile +
+                       '''")) { New-Item -Path "'''  + ExecutionLogFile +
+                       '''" -ItemType File -Force | Out-Null }'''
+                   ]
+               )
+           }
+       )
+
 
       LET JustDoIt <= SELECT * FROM foreach(row=CommandsToRun, query={
             SELECT * FROM execve(argv=[   'pwsh', '-exec', 'bypass',
-                                                '-Command', '''Import-Module "/usr/local/share/powershell/Modules/Invoke-AtomicRedTeam/Invoke-AtomicRedTeam.psd1" -Force; ''' + Command + ''' -GetPreReqs; ''' + Command + ''' -ExecutionLogPath ''' + ExecutionLogFile + ''';''' + if(condition=Cleanup, then=Command + ''' -Cleanup''', else='''''')
+                                                '-Command', '''Import-Module "/usr/local/share/powershell/Modules/Invoke-AtomicRedTeam/Invoke-AtomicRedTeam.psd1" -Force; ''' + Command + ''' -GetPreReqs; ''' + Command + ''' -ExecutionLogPath ''' + ExecutionLogFile + ''';'''
                                             ])}
 
      )
