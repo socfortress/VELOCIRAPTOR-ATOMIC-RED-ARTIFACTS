@@ -68,7 +68,316 @@ parameters:
       description: NOT RECOMMENDED...USE WITH CAUTION - Run all ART tests
       default: N
       type: bool
-      
+
+    - name: T1580 - 1
+      description: AWS - EC2 Enumeration from Cloud Instance
+      type: bool
+    - name: T1580 - 2
+      description: AWS - EC2 Security Group Enumeration
+      type: bool
+    - name: T1574.006 - 1
+      description: Shared Library Injection via /etc/ld.so.preload
+      type: bool
+    - name: T1574.006 - 2
+      description: Shared Library Injection via LD_PRELOAD
+      type: bool
+    - name: T1562.012 - 1
+      description: Delete all auditd rules using auditctl
+      type: bool
+    - name: T1562.012 - 2
+      description: Disable auditd using auditctl
+      type: bool
+    - name: T1562.008 - 4
+      description: AWS - Disable CloudTrail Logging Through Event Selectors using Stratus
+      type: bool
+    - name: T1562.008 - 5
+      description: AWS - CloudTrail Logs Impairment Through S3 Lifecycle Rule using Stratus
+      type: bool 
+    - name: T1562.008 - 6
+      description: AWS - Remove VPC Flow Logs using Stratus
+      type: bool  
+    - name: T1556.003 - 1
+      description: Malicious PAM rule
+      type: bool
+    - name: T1552.003 - 2
+      description: Malicious PAM rule (freebsd)
+      type: bool
+    - name: T1552.003 - 3
+      description: Malicious PAM module
+      type: bool
+    - name: T1552.007 - 3
+      description: Cat the contents of a Kubernetes service account token file
+      type: bool
+    - name: T1552.003 - 1
+      description: Search Through Bash History
+      type: bool
+    - name: T1552.003 - 2
+      description: Search Through sh History
+      type: bool
+    - name: T1548.003 - 1
+      description: Sudo usage
+      type: bool
+    - name: T1548.003 - 2
+      description: Sudo usage (freebsd)
+      type: bool
+    - name: T1548.003 - 3
+      description: Unlimited sudo cache timeout
+      type: bool
+    - name: T1548.003 - 4
+      description: Unlimited sudo cache timeout (freebsd)
+      type: bool
+    - name: T1548.003 - 5
+      description: Disable tty_tickets for sudo caching
+      type: bool
+    - name: T1548.003 - 6
+      description: Disable tty_tickets for sudo caching (freebsd)
+      type: bool
+    - name: T1548.001 - 1
+      description: Make and modify binary from C source
+      type: bool
+    - name: T1548.001 - 2
+      description: Make and modify binary from C source (freebsd)
+      type: bool
+    - name: T1548.001 - 3
+      description: Set a SetUID flag on file
+      type: bool
+    - name: T1548.001 - 4
+      description: Set a SetUID flag on file (freebsd)
+      type: bool
+    - name: T1548.001 - 5
+      description: Set a SetGID flag on file
+      type: bool
+    - name: T1548.001 - 6
+      description: Set a SetGID flag on file (freebsd)
+      type: bool
+    - name: T1548.001 - 7
+      description: Make and modify capabilities of a binary
+      type: bool
+    - name: T1548.001 - 8
+      description: Provide the SetUID capability to a file
+      type: bool
+    - name: T1548.001 - 9
+      description: Do reconnaissance for files that have the setuid bit set
+      type: bool
+    - name: T1548.001 - 10
+      description: Do reconnaissance for files that have the setgid bit set
+      type: bool
+    - name: T1547.006 - 1
+      description: Linux - Load Kernel Module via insmod
+      type: bool
+    - name: T1546.005 - 1
+      description: Trap EXIT
+      type: bool
+    - name: T1546.005 - 2
+      description: Trap EXIT (freebsd)
+      type: bool
+    - name: T1546.005 - 3
+      description: Trap SIGINT
+      type: bool
+    - name: T1546.005 - 4
+      description: Trap SIGINT (freebsd)
+      type: bool
+    - name: T1546.004 - 1
+      description: Add command to .bash_profile
+      type: bool
+    - name: T1546.004 - 2
+      description: Add command to .bashrc
+      type: bool   
+    - name: T1546.004 - 3
+      description: Add command to .shrc
+      type: bool
+    - name: T1546.004 - 4
+      description: Append to the system shell profile
+      type: bool 
+    - name: T1546.004 - 5
+      description: Append commands user shell profile
+      type: bool 
+    - name: T1546.004 - 6
+      description: System shell profile scripts
+      type: bool 
+    - name: T1546.004 - 7
+      description: Create/Append to .bash_logout
+      type: bool 
+    - name: T1543.002 - 1
+      description: Create Systemd Service
+      type: bool
+    - name: T1543.002 - 2
+      description: Create SysV Service
+      type: bool
+    - name: T1543.002 - 3
+      description: Create Systemd Service file, Enable the service , Modify and Reload the service.
+      type: bool
+    - name: T1222.002 - 1
+      description: chmod - Change file or folder mode (numeric mode)
+      type: bool
+    - name: T1222.002 - 2
+      description: chmod - Change file or folder mode (symbolic mode)
+      type: bool   
+    - name: T1222.002 - 3
+      description: chmod - Change file or folder mode (numeric mode) recursively
+      type: bool      
+    - name: T1222.002 - 4
+      description: chmod - Change file or folder mode (symbolic mode) recursively
+      type: bool    
+    - name: T1222.002 - 5
+      description: chown - Change file or folder ownership and group
+      type: bool    
+    - name: T1222.002 - 6
+      description: chown - Change file or folder ownership and group recursively
+      type: bool      
+    - name: T1222.002 - 7
+      description: chown - Change file or folder mode ownership only
+      type: bool       
+    - name: T1222.002 - 8
+      description: chown - Change file or folder ownership recursively
+      type: bool     
+    - name: T1222.002 - 9
+      description: chattr - Remove immutable file attribute
+      type: bool       
+    - name: T1222.002 - 10
+      description: chflags - Remove immutable file attribute
+      type: bool   
+    - name: T1222.002 - 11
+      description: Chmod through c script
+      type: bool     
+    - name: T1222.002 - 12
+      description: Chmod through c script (freebsd)
+      type: bool    
+    - name: T1222.002 - 13
+      description: Chown through c script
+      type: bool   
+    - name: T1222.002 - 14
+      description: Chown through c script (freebsd)
+      type: bool    
+    - name: T1098.004 - 1
+      description: Modify SSH Authorized Keys
+      type: bool
+    - name: T1070.002 - 3
+      description: Delete log files using built-in log utility
+      type: bool 
+    - name: T1070.002 - 4
+      description: Truncate system log files via truncate utility
+      type: bool 
+    - name: T1070.002 - 5
+      description: Truncate system log files via truncate utility (freebsd)
+      type: bool 
+    - name: T1070.002 - 6
+      description: Delete log files via cat utility by appending /dev/null or /dev/zero
+      type: bool 
+    - name: T1070.002 - 7
+      description: Delete log files via cat utility by appending /dev/null or /dev/zero (freebsd)
+      type: bool 
+    - name: T1070.002 - 10
+      description: Overwrite FreeBSD system log via echo utility
+      type: bool 
+    - name: T1070.002 - 13
+      description: Delete system log files via unlink utility (freebsd)
+      type: bool 
+    - name: T1070.002 - 18
+      description: Delete system journal logs via rm and journalctl utilities
+      type: bool 
+    - name: T1070.002 - 19
+      description: Overwrite Linux Mail Spool
+      type: bool 
+    - name: T1070.002 - 20
+      description: Overwrite Linux Log
+      type: bool 
+    - name: T1059.004 - 1
+      description: Create and Execute Bash Shell Script
+      type: bool 
+    - name: T1059.004 - 2
+      description: Command-Line Interface
+      type: bool 
+    - name: T1059.004 - 3
+      description: Harvest SUID executable files
+      type: bool      
+    - name: T1059.004 - 4
+      description: LinEnum tool execution
+      type: bool      
+    - name: T1059.004 - 5
+      description: New script file in the tmp directory
+      type: bool  
+    - name: T1059.004 - 6
+      description: What shell is running
+      type: bool 
+    - name: T1059.004 - 7
+      description: What shells are available
+      type: bool 
+    - name: T1059.004 - 8
+      description: Command line scripts
+      type: bool 
+    - name: T1059.004 - 9
+      description: Obfuscated command line scripts
+      type: bool 
+    - name: T1059.004 - 10
+      description: Change login shell
+      type: bool 
+    - name: T1059.004 - 11
+      description: Environment variable scripts
+      type: bool
+    - name: T1059.004 - 12
+      description: Detecting pipe-to-shell
+      type: bool
+    - name: T1059.004 - 13  
+      description: Current kernel information enumeration
+      type: bool
+    - name: T1059.004 - 14
+      description: Shell Creation using awk command
+      type: bool
+    - name: T1059.004 - 15
+      description: Creating shell using cpan command
+      type: bool
+    - name: T1059.004 - 16
+      description: Shell Creation using busybox commands
+      type: bool
+    - name: T1059.004 - 17
+      description: emacs spawning an interactive system shell
+      type: bool
+    - name: T1053.006 - 1
+      description: Create Systemd Service and Timer
+      type: bool 
+    - name: T1053.006 - 2
+      description: Create a user level transient systemd service and timer
+      type: bool 
+    - name: T1053.006 - 3
+      description: Create a system level transient systemd service and timer
+      type: bool 
+    - name: T1037.004 - 2
+      description: rc.common
+      type: bool 
+    - name: T1037.004 - 3
+      description: rc.local
+      type: bool 
+    - name: T1036.006 - 1
+      description: Space After Filename
+      type: bool 
+    - name: T1003.008 - 1
+      description: Access /etc/shadow (Local)
+      type: bool    
+    - name: T1003.008 - 2
+      description: Access /etc/master.passwd (Local)
+      type: bool  
+    - name: T1003.008 - 3
+      description: Access /etc/passwd (Local)
+      type: bool 
+    - name: T1003.008 - 4
+      description: Access /etc/{shadow,passwd,master.passwd} with a standard bin that's not cat
+      type: bool 
+    - name: T1003.008 - 5
+      description: Access /etc/{shadow,passwd,master.passwd} with shell builtins
+      type: bool 
+    - name: T1003.007 - 1
+      description: Dump individual process memory with sh (Local)
+      type: bool    
+    - name: T1003.007 - 2
+      description: Dump individual process memory with sh on FreeBSD (Local)
+      type: bool  
+    - name: T1003.007 - 3
+      description: Dump individual process memory with Python (Local)
+      type: bool  
+    - name: T1003.007 - 4
+      description: Capture Passwords with MimiPenguin
+      type: bool  
     - name: T1014 - 1
       description: Loadable Kernel Module based Rootkit
       type: bool
@@ -986,11 +1295,97 @@ parameters:
 
 
 precondition: SELECT OS From info() where OS = 'linux'
-
 sources:
   - query: |
      LET CommandTable = SELECT * FROM parse_csv(accessor="data", filename='''
      Flag,Command
+     T1580 - 1,"Invoke-AtomicTest T1580 -TestNumbers 1"
+     T1580 - 2,"Invoke-AtomicTest T1580 -TestNumbers 2"
+     T1574.006 - 1,"Invoke-AtomicTest T1574.006 -TestNumbers 1"
+     T1574.006 - 2,"Invoke-AtomicTest T1574.006 -TestNumbers 2"
+     T1562.012 - 1,"Invoke-AtomicTest T1562.012 -TestNumbers 1"
+     T1562.012 - 2,"Invoke-AtomicTest T1562.012 -TestNumbers 2"
+     T1562.008 - 4,"Invoke-AtomicTest T1562.008 -TestNumbers 4"
+     T1562.008 - 5,"Invoke-AtomicTest T1562.008 -TestNumbers 5"
+     T1562.008 - 6,"Invoke-AtomicTest T1562.008 -TestNumbers 6"
+     T1556.003 - 1,"Invoke-AtomicTest T1556.003 -TestNumbers 1"
+     T1556.003 - 2,"Invoke-AtomicTest T1556.003 -TestNumbers 2"
+     T1556.003 - 3,"Invoke-AtomicTest T1556.003 -TestNumbers 3"
+     T1552.007 - 3,"Invoke-AtomicTest T1552.007 -TestNumbers 3"
+     T1552.003 - 1,"Invoke-AtomicTest T1552.003 -TestNumbers 1"
+     T1552.003 - 2,"Invoke-AtomicTest T1552.003 -TestNumbers 2"
+     T1548.003 - 1,"Invoke-AtomicTest T1548.003 -TestNumbers 1"
+     T1548.003 - 2,"Invoke-AtomicTest T1548.003 -TestNumbers 2"
+     T1548.003 - 3,"Invoke-AtomicTest T1548.003 -TestNumbers 3"
+     T1548.003 - 4,"Invoke-AtomicTest T1548.003 -TestNumbers 4"
+     T1548.003- 5,"Invoke-AtomicTest T1548.003 -TestNumbers 5"
+     T1548.003 - 6,"Invoke-AtomicTest T1548.003 -TestNumbers 6"
+     T1548.001 - 1,"Invoke-AtomicTest T1548.001 -TestNumbers 1"
+     T1548.001 - 2,"Invoke-AtomicTest T1548.001 -TestNumbers 2"
+     T1548.001 - 3,"Invoke-AtomicTest T1548.001 -TestNumbers 3"
+     T1548.001 - 4,"Invoke-AtomicTest T1548.001 -TestNumbers 4"
+     T1548.001- 5,"Invoke-AtomicTest T1548.001 -TestNumbers 5"
+     T1548.001 - 6,"Invoke-AtomicTest T1548.001 -TestNumbers 6"
+     T1548.001 - 7,"Invoke-AtomicTest T1548.001 -TestNumbers 7"
+     T1548.001 - 8,"Invoke-AtomicTest T1548.001 -TestNumbers 8"
+     T1548.001 - 9,"Invoke-AtomicTest T1548.001 -TestNumbers 9"
+     T1548.001- 10,"Invoke-AtomicTest T1548.001 -TestNumbers 10"
+     T1547.006 - 1,"Invoke-AtomicTest T1547.006 -TestNumbers 1"
+     T1546.005 - 1,"Invoke-AtomicTest T1546.005 -TestNumbers 1"
+     T1546.005 - 2,"Invoke-AtomicTest T1546.005 -TestNumbers 2"
+     T1546.005 - 3,"Invoke-AtomicTest T1546.005 -TestNumbers 3"
+     T1546.005 - 4,"Invoke-AtomicTest T1546.004 -TestNumbers 4"
+     T1546.005 - 5,"Invoke-AtomicTest T1546.005 -TestNumbers 5"
+     T1546.004 - 1,"Invoke-AtomicTest T1546.004 -TestNumbers 1"
+     T1546.004 - 2,"Invoke-AtomicTest T1546.004 -TestNumbers 2"
+     T1546.004 - 3,"Invoke-AtomicTest T1546.004 -TestNumbers 3"
+     T1546.004 - 4,"Invoke-AtomicTest T1546.004 -TestNumbers 4"
+     T1546.004 - 5,"Invoke-AtomicTest T1546.004 -TestNumbers 5"
+     T1546.004 - 6,"Invoke-AtomicTest T1546.004 -TestNumbers 6"
+     T1546.004 - 7,"Invoke-AtomicTest T1546.004 -TestNumbers 7"
+     T1543.002 - 1,"Invoke-AtomicTest T1543.002 -TestNumbers 1"
+     T1543.002 - 2,"Invoke-AtomicTest T1543.002 -TestNumbers 2"
+     T1543.002 - 3,"Invoke-AtomicTest T1543.002 -TestNumbers 3"
+     T1222.002 - 1,"Invoke-AtomicTest T1222.002 -TestNumbers 1"
+     T1222.002 - 2,"Invoke-AtomicTest T1222.002 -TestNumbers 2"
+     T1222.002 - 3,"Invoke-AtomicTest T1222.002 -TestNumbers 3"
+     T1222.002 - 4,"Invoke-AtomicTest T1222.002 -TestNumbers 4"
+     T1222.002 - 5,"Invoke-AtomicTest T1222.002 -TestNumbers 5"
+     T1222.002 - 6,"Invoke-AtomicTest T1222.002 -TestNumbers 6"
+     T1222.002 - 7,"Invoke-AtomicTest T1222.002 -TestNumbers 7"
+     T1222.002 - 8,"Invoke-AtomicTest T1222.002 -TestNumbers 8"
+     T1222.002 - 9,"Invoke-AtomicTest T1222.002 -TestNumbers 9"
+     T1222.002 - 10,"Invoke-AtomicTest T1222.002 -TestNumbers 10"
+     T1222.002 - 11,"Invoke-AtomicTest T1222.002 -TestNumbers 11"
+     T1222.002 - 12,"Invoke-AtomicTest T1222.002 -TestNumbers 12"
+     T1222.002 - 13,"Invoke-AtomicTest T1222.002 -TestNumbers 13"
+     T1222.002 - 14,"Invoke-AtomicTest T1222.002 -TestNumbers 14"
+     T1098.004 - 3,"Invoke-AtomicTest T1098.004 -TestNumbers 1"
+     T1070.002 - 3,"Invoke-AtomicTest T1070.002 -TestNumbers 3"
+     T1070.002 - 4,"Invoke-AtomicTest T1070.002 -TestNumbers 4"
+     T1070.002 - 5,"Invoke-AtomicTest T1070.002 -TestNumbers 5"
+     T1070.002 - 6,"Invoke-AtomicTest T1070.002 -TestNumbers 6"
+     T1070.002 - 7,"Invoke-AtomicTest T1070.002 -TestNumbers 7"
+     T1070.002 - 10,"Invoke-AtomicTest T1070.002 -TestNumbers 10"
+     T1070.002 - 13,"Invoke-AtomicTest T1070.002 -TestNumbers 13"
+     T1070.002 - 18,"Invoke-AtomicTest T1070.002 -TestNumbers 18"
+     T1070.002 - 19,"Invoke-AtomicTest T1070.002 -TestNumbers 19"
+     T1070.002 - 20,"Invoke-AtomicTest T1070.002 -TestNumbers 20"
+     T1053.006 - 1,"Invoke-AtomicTest T1053.006 -TestNumbers 1"
+     T1053.006 - 2,"Invoke-AtomicTest T1053.006 -TestNumbers 2"
+     T1053.006 - 3,"Invoke-AtomicTest T1053.006 -TestNumbers 3"
+     T1037.004 - 2,"Invoke-AtomicTest T1037.004 -TestNumbers 2"
+     T1037.004 - 3,"Invoke-AtomicTest T1037.004 -TestNumbers 3"
+     T1036.006 - 2,"Invoke-AtomicTest T1036.006 -TestNumbers 2"
+     T1003.008 - 1,"Invoke-AtomicTest T1003.008 -TestNumbers 1"
+     T1003.008 - 2,"Invoke-AtomicTest T1003.008 -TestNumbers 2"
+     T1003.008 - 3,"Invoke-AtomicTest T1003.008 -TestNumbers 3"
+     T1003.008 - 4,"Invoke-AtomicTest T1003.008 -TestNumbers 4"
+     T1003.008 - 5,"Invoke-AtomicTest T1003.008 -TestNumbers 5"
+     T1003.007 - 1,"Invoke-AtomicTest T1003.007 -TestNumbers 1"
+     T1003.007 - 2,"Invoke-AtomicTest T1003.007 -TestNumbers 2"
+     T1003.007 - 3,"Invoke-AtomicTest T1003.007 -TestNumbers 3"
+     T1003.007 - 4,"Invoke-AtomicTest T1003.007 -TestNumbers 4"
      T1014 - 1,"Invoke-AtomicTest T1014 -TestNumbers 1"
      T1014 - 2,"Invoke-AtomicTest T1014 -TestNumbers 2"
      T1014 - 3,"Invoke-AtomicTest T1014 -TestNumbers 3"
