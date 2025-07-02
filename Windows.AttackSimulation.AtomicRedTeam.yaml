@@ -76,8 +76,416 @@ parameters:
   default: N
   type: bool
 
+- name: T1620 - 1
+  description: Reflectively load Mimik@tz into memory using WinPwn
+  type: bool
+
+- name: T1615 - 1
+  description: Display group policy information via gpresult
+  type: bool
+
+- name: T1615 - 2
+  description: Get-DomainGPO to display group policy information via PowerView
+  type: bool
+
+- name: T1615 - 3
+  description: WinPwn - GPOAudit
+  type: bool
+
+- name: T1615 - 4
+  description: WinPwn - GPORemoteAccessPolicy
+  type: bool
+
+- name: T1615 - 5
+  description: MSFT Get-GPO Cmdlet
+  type: bool
+
+- name: T1595.003 - 1
+  description: Web Server Wordlist Scan
+  type: bool
+
+- name: T1592.001 - 1
+  description: Enumerate PlugNPlay Camera
+  type: bool
+
+- name: T1574.008 - 1
+  description: powerShell Persistence via hijacking default modules - Get-Variable.exe
+  type: bool
+
+- name: T1570 - 1
+  description: Exfiltration Over SMB over QUIC (New-SmbMapping)
+  type: bool
+
+- name: T1570 - 2
+  description: Exfiltration Over SMB over QUIC (NET USE)
+  type: bool
+
+- name: T1567.003 - 1
+  description: Exfiltrate data with HTTP POST to text storage sites - pastebin.com (Windows)
+  type: bool
+
+- name: T1567.002 - 1
+  description: Exfiltrate data with rclone to cloud Storage - Mega (Windows)
+  type: bool
+
+- name: T1566.002 - 1
+  description: Paste and run technique (Win+R with encoded PowerShell command)
+  type: bool
+
+- name: T1564.006 - 1
+  description: Register Portable Virtualbox (Maze ransomware technique)
+  type: bool
+
+- name: T1564.006 - 2
+  description: Create and start VirtualBox virtual machine
+  type: bool
+
+- name: T1564.006 - 3
+  description: Create and start Hyper-V virtual machine
+  type: bool
+
+- name: T1564.002 - 3
+  description: Create Hidden User in Registry
+  type: bool
+
+- name: T1562 - 1
+  description: Windows Disable LSA Protection
+  type: bool
+
+- name: T1562.010 - 2
+  description: ESXi - Change VIB acceptance level to CommunitySupported via ESXCLI (Executed from Windows)
+  type: bool
+
+- name: T1562.010 - 3
+  description: PowerShell Version 2 Downgrade
+  type: bool
+
+- name: T1562.009 - 1
+  description: Safe Mode Boot
+  type: bool
+
+- name: T1562.006 - 5
+  description: Disable Powershell ETW Provider - Windows
+  type: bool
+
+- name: T1562.006 - 6
+  description: Disable .NET Event Tracing for Windows Via Registry (cmd)
+  type: bool
+
+- name: T1562.006 - 7
+  description: Disable .NET Event Tracing for Windows Via Registry (powershell)
+  type: bool
+
+- name: T1562.006 - 8
+  description: LockBit Black - Disable the ETW Provider of Windows Defender -cmd
+  type: bool
+
+- name: T1562.006 - 9
+  description: LockBit Black - Disable the ETW Provider of Windows Defender -Powershell
+  type: bool
+
+- name: T1562.006 - 10
+  description: Disable .NET ETW via Env Variable HKCU Registry - Cmd
+  type: bool
+
+- name: T1562.006 - 11
+  description: Disable .NET ETW via Env Variable HKCU Registry - PowerShell
+  type: bool
+
+- name: T1562.006 - 12
+  description: Disable .NET ETW via Env Variable HKLM Registry - Cmd
+  type: bool
+
+- name: T1562.006 - 13
+  description: Disable .NET ETW via Env Variable HKLM Registry - PowerShell
+  type: bool
+
+- name: T1562.006 - 14
+  description: Block Cybersecurity communication via NRPT
+  type: bool
+
+
+- name: T1562.003 - 11
+  description: Disable Windows Command Line Auditing using reg.exe
+  type: bool
+
+- name: T1562.003 - 12
+  description: Disable Windows Command Line Auditing using PowerShell Cmdlet
+  type: bool
+
+- name: T1558.002 - 1
+  description: Crafting Active Directory silver tickets with mimikatz
+  type: bool
+
+- name: T1557.001 - 1
+  description: LLMNR Poisoning with Inveigh (PowerShell)
+  type: bool
+
+- name: T1555.004 - 1
+  description: Access Saved Credentials via VaultCmd
+  type: bool
+
+- name: T1555.004 - 2
+  description: WinPwn - Loot local Credentials - Invoke-WCMDump
+  type: bool
+
+- name: T1553.003 - 1
+  description: SIP (Subject Interface Package) Hijacking via Custom DLL
+  type: bool
+
+- name: T1547.015 - 1
+  description: Persistence by modifying Windows Terminal profile
+  type: bool
+
+- name: T1547.014 - 1
+  description: HKLM - Add atomic_test key to launch executable as part of user setup
+  type: bool
+
+- name: T1547.014 - 2
+  description: HKLM - Add malicious StubPath value to existing Active Setup Entry
+  type: bool
+
+- name: T1547.014 - 3
+  description: HKLM - re-execute 'Internet Explorer Core Fonts' StubPath payload by decreasing version number
+  type: bool
+
+- name: T1547.012 - 1
+  description: Print Processors
+  type: bool
+
+- name: T1547.008 - 1
+  description: Modify Registry to load Arbitrary DLL into LSASS - LsaDbExtPt
+  type: bool
+
+- name: T1547.006 - 4
+  description: Snake Malware Kernel Driver Comadmin
+  type: bool
+
+- name: T1547.003 - 1
+  description: Create a new time provider
+  type: bool
+
+- name: T1547.003 - 2
+  description: Edit an existing time provider
+  type: bool
+
+- name: T1547.002 - 1
+  description: Authentication Package
+  type: bool
+
+- name: T1553.006 - 1
+  description: Code Signing Policy Modification
+  type: bool
+
+- name: T1546.015 - 1
+  description: COM Hijacking - InprocServer32
+  type: bool
+
+- name: T1622 - 1
+  description: Detect a debugger presence in the machine via PowerShell
+  type: bool
+
+- name: T1546.015 - 2
+  description: Powershell Execute COM Object
+  type: bool
+
+- name: T1546.015 - 3
+  description: COM Hijacking with RunDLL32 (Local Server Switch)
+  type: bool
+
+- name: T1546.015 - 4
+  description: COM hijacking via TreatAs
+  type: bool
+
+- name: T1546.009 - 1
+  description: Create registry persistence via AppCert DLL
+  type: bool
+
+- name: T1542.001 - 1
+  description: UEFI Persistence via Wpbbin.exe File Creation
+  type: bool
+
+- name: T1539 - 1
+  description: Steal Firefox Cookies (Windows)
+  type: bool
+
+- name: T1539 - 2
+  description: Steal Chrome Cookies (Windows)
+  type: bool
+
+- name: T1539 - 4
+  description: Steal Chrome v127+ cookies via Remote Debugging (Windows)
+  type: bool
+
+- name: T1505.004 - 1
+  description: Install IIS Module using AppCmd.exe
+  type: bool
+
+- name: T1505.004 - 2
+  description: Install IIS Module using PowerShell Cmdlet New-WebGlobalModule
+  type: bool
+
+- name: T1505.005 - 1
+  description: Simulate Patching termsrv.dll
+  type: bool
+
+- name: T1505.005 - 2
+  description: Modify Terminal Services DLL Path
+  type: bool
+
+- name: T1204.003 - 1
+  description: Malicious Execution from Mounted ISO Image
+  type: bool
+
+- name: T1195 - 1
+  description: Octopus Scanner Malware Open Source Supply Chain
+  type: bool
+
+- name: T1137.001 - 1
+  description: Injecting a Macro into the Word Normal.dotm Template for Persistence via PowerShell
+  type: bool
+
+- name: T1129 - 1
+  description: ESXi - Install a custom VIB on an ESXi host
+  type: bool
+
+- name: T1134.005 - 1
+  description: Injection SID-History with mimikatz
+  type: bool
+
+- name: T1125 - 1
+  description: Registry artefact when application use webcam
+  type: bool
+
+- name: T1110.004 - 4
+  description: Brute Force:Credential Stuffing using Kerbrute Tool
+  type: bool
+
+- name: T1090.003 - 1
+  description: Psiphon
+  type: bool
+
+- name: T1091 - 1
+  description: USB Malware Spread Simulation
+  type: bool
+
+- name: T1090.003 - 2
+  description: Tor Proxy Usage - Windows
+  type: bool
+
+- name: T1070.008 - 1
+  description: Copy and Delete Mailbox Data on Windows
+  type: bool
+
+- name: T1070.008 - 4
+  description: Copy and Modify Mailbox Data on Windows
+  type: bool
+
+- name: T1059.010 - 1
+  description: AutoHotKey script execution
+  type: bool
+
+
+- name: T1059.007 - 1
+  description: JScript execution to gather local computer information via cscript
+  type: bool
+
+- name: T1059.007 - 2
+  description: JScript execution to gather local computer information via wscript
+  type: bool
+
+- name: T1055.015 - 1
+  description: Process injection ListPlanting
+  type: bool
+
+
+- name: T1055.011 - 1
+  description: Process Injection via Extra Window Memory (EWM) x64 executable
+  type: bool
+
+- name: T1055.002 - 1
+  description: Portable Executable Injection
+  type: bool
+
+- name: T1039 - 1
+  description: Copy a sensitive File over Administrative share with copy
+  type: bool
+
+- name: T1039 - 2
+  description: Copy a sensitive File over Administrative share with Powershell
+  type: bool
+
+- name: T1055.003 - 1
+  description: Thread Execution Hijacking
+  type: bool
+
+- name: T1036.007 - 1
+  description: File Extension Masquerading
+  type: bool
+
+- name: T1030 - 1
+  description: Network-Based Data Transfer in Small Chunks
+  type: bool
+
+- name: T1027.007 - 1
+  description: Dynamic API Resolution-Ninja-syscall
+  type: bool
+
+- name: T1027.006 - 1
+  description: HTML Smuggling Remote Payload
+  type: bool
+
+- name: T1025 - 1
+  description: Identify Documents on USB and Removable Media via PowerShell
+  type: bool
+
+- name: T1021.004 - 1
+  description: ESXi - Enable SSH via PowerCLI
+  type: bool
+
+- name: T1021.004 - 2
+  description: ESXi - Enable SSH via VIM-CMD
+  type: bool
+
+- name: T1016.002 - 1
+  description: Enumerate Stored Wi-Fi Profiles And Passwords via netsh
+  type: bool
+
+- name: T1016.001 - 1
+  description: Check internet connection using ping Windows
+  type: bool
+
+- name: T1016.001 - 3
+  description: Check internet connection using Test-NetConnection in PowerShell (ICMP-Ping)
+  type: bool
+
+- name: T1016.001 - 4
+  description: Check internet connection using Test-NetConnection in PowerShell (TCP-HTTP)
+  type: bool
+
+- name: T1016.001 - 5
+  description: Check internet connection using Test-NetConnection in PowerShell (TCP-SMB)
+    Messages
+  type: bool
+
+- name: T1003.005 - 1
+  description: Cached Credential Dump via Cmdkey
+  type: bool
+
+- name: T1005 - 1
+  description: Search files of interest and save them to a single zip file (Windows)
+  type: bool
+
 - name: T1558.004 - 1
   description: AS-REP Roasting - Rubeus asreproast
+  type: bool
+
+- name: T1558.004 - 2
+  description: Get-DomainUser with PowerView
+  type: bool
+
+- name: T1558.004 - 3
+  description: WinPwn - PowerSharpPack - Kerberoasting Using Rubeus
   type: bool
 
 - name: T1056.004 - 1
@@ -85,12 +493,44 @@ parameters:
     Messages
   type: bool
 
-- name: T1552.001 - 3
-  description: Credentials In Files - Extracting passwords with findstr
+- name: T1552.001 - 4
+  description: Extracting passwords with findstr
   type: bool
 
-- name: T1552.001 - 4
-  description: Credentials In Files - Access unattend.xml
+- name: T1552.001 - 5
+  description: Access unattend.xml
+  type: bool
+
+- name: T1552.001 - 7
+  description: WinPwn - sensitivefiles
+  type: bool
+
+- name: T1552.001 - 8
+  description: WinPwn - Snaffler
+  type: bool
+
+- name: T1552.001 - 9
+  description: WinPwn - powershellsensitive
+  type: bool
+
+- name: T1552.001 - 10
+  description: WinPwn - passhunt
+  type: bool
+
+- name: T1552.001 - 11
+  description: WinPwn - SessionGopher
+  type: bool
+
+- name: T1552.001 - 12
+  description: WinPwn - Loot local Credentials - AWS, Microsoft Azure, and Google Compute credentials
+  type: bool
+
+- name: T1552.001 - 13
+  description: List Credential Files via PowerShell
+  type: bool
+
+- name: T1552.001 - 14
+  description: List Credential Files via Command Prompt
   type: bool
 
 - name: T1555 - 1
@@ -118,6 +558,18 @@ parameters:
     Windows Credential Manager using vaultcmd.exe [Web Credentials]
   type: bool
 
+- name: T1555 - 6
+  description: WinPwn - Loot local Credentials - lazagne
+  type: bool
+
+- name: T1555 - 7
+  description: WinPwn - Loot local Credentials - Wifi Credentials
+  type: bool
+
+- name: T1555 - 8
+  description: WinPwn - Loot local Credentials - Decrypt Teamviewer Passwords
+  type: bool
+
 - name: T1555.003 - 1
   description: Credentials from Web Browsers - Run Chrome-password Collector
   type: bool
@@ -130,6 +582,50 @@ parameters:
 - name: T1555.003 - 4
   description: Credentials from Web Browsers - Simulating access to Chrome Login
     Data
+  type: bool
+
+- name: T1555.003 - 5
+  description: Simulating access to Opera Login Data
+  type: bool
+
+- name: T1555.003 - 6
+  description: Simulating access to Windows Firefox Login Data
+  type: bool
+
+- name: T1555.003 - 7
+  description: Simulating access to Windows Edge Login Data
+  type: bool
+
+- name: T1555.003 - 8
+  description: Decrypt Mozilla Passwords with Firepwd.py
+  type: bool
+
+- name: T1555.003 - 10
+  description: Stage Popular Credential Files for Exfiltration
+  type: bool
+
+- name: T1555.003 - 11
+  description: WinPwn - BrowserPwn
+  type: bool
+
+- name: T1555.003 - 12
+  description: WinPwn - Loot local Credentials - mimi-kittenz
+  type: bool
+
+- name: T1555.003 - 13
+  description: WinPwn - PowerSharpPack - Sharpweb for Browser Credentials
+  type: bool
+
+- name: T1555.003 - 15
+  description: WebBrowserPassView - Credentials from Browser
+  type: bool
+
+- name: T1555.003 - 16
+  description: BrowserStealer (Chrome / Firefox / Microsoft Edge)
+  type: bool
+
+- name: T1555.003 - 17
+  description: Dump Chrome Login Data with esentutl
   type: bool
 
 - name: T1552.002 - 1
@@ -145,8 +641,21 @@ parameters:
   description: DCSync - DCSync (Active Directory)
   type: bool
 
+- name: T1003.006 - 2
+  description: Run DSInternals Get-ADReplAccount
+  type: bool
+
+
 - name: T1187 - 1
   description: Forced Authentication - PetitPotam
+  type: bool
+
+- name: T1187 - 2
+  description: WinPwn - PowerSharpPack - Retrieving NTLM Hashes without Touching LSASS
+  type: bool
+
+- name: T1187 - 3
+  description: Trigger an authenticated RPC call to a target server with no Sign flag set
   type: bool
 
 - name: T1056.002 - 2
@@ -156,6 +665,10 @@ parameters:
 - name: T1558.001 - 1
   description: Golden Ticket - Crafting Active Directory golden tickets with 
     mimikatz
+  type: bool
+
+- name: T1558.001 - 2
+  description: Crafting Active Directory golden tickets with Rubeus
   type: bool
 
 - name: T1552.006 - 1
@@ -186,12 +699,40 @@ parameters:
   description: Kerberoasting - Request All Tickets via PowerShell
   type: bool
 
+- name: T1558.003 - 6
+  description: WinPwn - Kerberoasting
+  type: bool
+
+- name: T1558.003 - 7 
+  description: WinPwn - PowerSharpPack - Kerberoasting Using Rubeus
+  type: bool
+
+
+
+
+
+
+
+
+
 - name: T1056.001 - 1
   description: Keylogging - Input Capture
   type: bool
 
 - name: T1003.004 - 1
   description: LSA Secrets - Dumping LSA Secrets
+  type: bool
+
+- name: T1003.004 - 2
+  description: Dump Kerberos Tickets from LSA using dumper.ps1
+  type: bool
+
+- name: T1003.001 - 13
+  description: Dump LSASS.exe using lolbin rdrleakdiag.exe
+  type: bool
+
+- name: T1003.001 - 14
+  description: Dump LSASS.exe Memory through Silent Process Exit
   type: bool
 
 - name: T1003.001 - 1
@@ -271,13 +812,34 @@ parameters:
   description: NTDS - Create Symlink to Volume Shadow Copy
   type: bool
 
-- name: T1040 - 3
-  description: Network Sniffing - Packet Capture Windows Command Prompt
+- name: T1003.003 - 8
+  description: Create Symlink to Volume Shadow Copy
+  type: bool
+
+- name: T1003.003 - 9
+  description: Create Volume Shadow Copy with diskshadow
   type: bool
 
 - name: T1040 - 4
+  description: Network Sniffing - Packet Capture Windows Command Prompt
+  type: bool
+
+- name: T1040 - 5
   description: Network Sniffing - Windows Internal Packet Capture
   type: bool
+
+- name: T1040 - 6
+  description: Windows Internal pktmon capture
+  type: bool
+
+- name: T1040 - 7
+  description: Windows Internal pktmon set filter
+  type: bool
+
+- name: T1040 - 16
+  description: PowerShell Network Sniffing
+  type: bool
+
 
 - name: T1003 - 1
   description: OS Credential Dumping - Gsecdump
@@ -300,6 +862,11 @@ parameters:
   description: Password Filter DLL - Install and Register Password Filter DLL
   type: bool
 
+- name: T1556.002 - 2
+  description: Install Additional Authentication Packages
+  type: bool
+
+
 - name: T1110.001 - 1
   description: Password Guessing - Brute Force Credentials of all Active 
     Directory domain users via SMB
@@ -309,6 +876,15 @@ parameters:
   description: Password Guessing - Brute Force Credentials of single Active 
     Directory domain user via LDAP against domain controller (NTLM or Kerberos)
   type: bool
+
+- name: T1110.001 - 4
+  description: Password Brute User using Kerbrute Tool
+  type: bool
+
+- name: T1110.001 - 8
+  description: ESXi - Brute Force Until Account Lockout
+  type: bool
+
 
 - name: T1110.003 - 1
   description: Password Spraying - Password Spray all Domain Users
@@ -324,19 +900,55 @@ parameters:
     Kerberos)
   type: bool
 
+- name: T1110.003 - 5
+  description: WinPwn - DomainPasswordSpray Attacks
+  type: bool
+
+- name: T1110.003 - 6
+  description: Password Spray Invoke-DomainPasswordSpray Light
+  type: bool
+
+- name: T1110.003 - 8
+  description: Password Spray using Kerbrute Tool
+  type: bool
+
 - name: T1552.004 - 1
   description: Private Keys - Private Keys
   type: bool
 
-- name: T1552.004 - 6
+- name: T1552.004 - 9
   description: Private Keys - ADFS token signing and encryption certificates 
     theft - Local
   type: bool
 
-- name: T1552.004 - 7
+- name: T1552.004 - 10
   description: Private Keys - ADFS token signing and encryption certificates 
     theft - Remote
   type: bool
+
+- name: T1552.004 - 11
+  description: CertUtil ExportPFX
+  type: bool
+
+- name: T1552.004 - 12
+  description: Export Root Certificate with Export-PFXCertificate
+  type: bool
+
+- name: T1552.004 - 13
+  description: Export Root Certificate with Export-Certificate
+  type: bool
+
+- name: T1552.004 - 14
+  description: Export Certificates with Mimikatz
+  type: bool
+
+
+
+
+
+
+
+
 
 - name: T1003.002 - 1
   description: Security Account Manager - Registry dump of SAM, creds, and 
@@ -366,6 +978,16 @@ parameters:
     System.IO.File
   type: bool
 
+- name: T1003.002 - 7
+  description: WinPwn - Loot local Credentials - Dump SAM-File for NTLM Hashes
+    certutil
+  type: bool
+
+- name: T1003.002 - 8
+  description: Dumping of SAM, creds, and secrets(Reg Export)
+    System.IO.File
+  type: bool
+
 - name: T1560 - 1
   description: Archive Collected Data - Compress Data for Exfiltration With 
     PowerShell
@@ -390,8 +1012,27 @@ parameters:
     Exfiltration with 7zip
   type: bool
 
+- name: T1560.001 - 10
+  description: ESXi - Remove Syslog remote IP
+  type: bool
+
+- name: T1560.001 - 11
+  description: Compress a File for Exfiltration using Makecab
+  type: bool
+
+
+
+
+
+
+
+
 - name: T1123 - 1
   description: Audio Capture - using device audio capture commandlet
+  type: bool
+
+- name: T1123 - 2
+  description: Registry artefact when application use microphone
   type: bool
 
 - name: T1119 - 1
@@ -439,12 +1080,16 @@ parameters:
     Get-Inbox
   type: bool
 
-- name: T1113 - 5
-  description: Screen Capture - Windows Screencapture
+- name: T1113 - 7
+  description: Windows Screencapture
   type: bool
 
-- name: T1113 - 6
-  description: Screen Capture - Windows Screen Capture (CopyFromScreen)
+- name: T1113 - 8
+  description: Windows Screen Capture (CopyFromScreen)
+  type: bool
+
+- name: T1113 - 9
+  description: Windows Recall Feature Enabled - DisableAIDataAnalysis Value Deleted
   type: bool
 
 - name: T1546.008 - 1
@@ -454,6 +1099,34 @@ parameters:
 
 - name: T1546.008 - 2
   description: Accessibility Features - Replace binary of sticky keys
+  type: bool
+
+- name: T1652 - 1
+  description: Device Driver Discovery using driverquery
+  type: bool
+
+- name: T1546.008 - 3
+  description: Create Symbolic Link From osk.exe to cmd.exe
+  type: bool
+
+- name: T1546.008 - 4
+  description: Atbroker.exe (AT) Executes Arbitrary Command via Registry Key
+  type: bool
+
+- name: T1546.008 - 5
+  description: Auto-start application on user logon
+  type: bool
+
+- name: T1546.008 - 6
+  description: Replace utilman.exe (Ease of Access Binary) with cmd.exe
+  type: bool
+
+- name: T1546.008 - 7
+  description: Replace Magnify.exe (Magnifier binary) with cmd.exe
+  type: bool
+
+- name: T1546.008 - 8
+  description: Replace Narrator.exe (Narrator binary) with cmd.exe
   type: bool
 
 - name: T1546.010 - 1
@@ -477,6 +1150,15 @@ parameters:
 - name: T1055.004 - 1
   description: Asynchronous Procedure Call - Process Injection via C#
   type: bool
+
+- name: T1055.004 - 2
+  description: EarlyBird APC Queue Injection in Go
+  type: bool
+
+- name: T1055.004 - 3
+  description: Remote Process Injection with Go using NtQueueApcThreadEx WinAPI
+  type: bool
+
 
 - name: T1053.002 - 1
   description: At (Windows) - At.exe Scheduled task
@@ -555,12 +1237,57 @@ parameters:
   description: Bypass User Account Control - UACME Bypass Method 61
   type: bool
 
+- name: T1548.002 - 18
+  description: WinPwn - UAC Magic
+  type: bool
+
+- name: T1548.002 - 19
+  description: WinPwn - UAC Bypass ccmstp technique
+  type: bool
+
+- name: T1548.002 - 20
+  description: WinPwn - UAC Bypass DiskCleanup technique
+  type: bool
+
+- name: T1548.002 - 21
+  description: WinPwn - UAC Bypass DccwBypassUAC technique
+  type: bool
+
+- name: T1548.002 - 22
+  description: Disable UAC admin consent prompt via ConsentPromptBehaviorAdmin registry key
+  type: bool
+
+- name: T1548.002 - 23
+  description: UAC Bypass with WSReset Registry Modification
+  type: bool
+
+- name: T1548.002 - 24
+  description: Disable UAC - Switch to the secure desktop when prompting for elevation via registry key
+  type: bool
+
+- name: T1548.002 - 25
+  description: Disable UAC notification via registry keys
+  type: bool
+
+- name: T1548.002 - 26
+  description: Disable ConsentPromptBehaviorAdmin via registry keys
+  type: bool
+
+- name: T1548.002 - 27
+  description: UAC bypassed by Utilizing ProgIDs registry.
+  type: bool
+
+
 - name: T1574.012 - 1
   description: COR_PROFILER - User scope COR_PROFILER
   type: bool
 
 - name: T1574.012 - 2
   description: COR_PROFILER - System Scope COR_PROFILER
+  type: bool
+
+- name: T1649 - 1
+  description: Staging Local Certificates via Export-Certificate
   type: bool
 
 - name: T1574.012 - 3
@@ -575,10 +1302,34 @@ parameters:
   description: Create Process with Token - Access Token Manipulation
   type: bool
 
-- name: T1574.001 - 1
-  description: DLL Search Order Hijacking - DLL Search Order Hijacking - 
-    amsi.dll
+- name: T1134.002 - 2
+  description: WinPwn - Get SYSTEM shell - Pop System Shell using Token Manipulation technique
   type: bool
+
+- name: T1574.001 - 1
+  description: DLL Search Order Hijacking - amsi.dll
+  type: bool
+
+- name: T1574.001 - 2
+  description: Phantom DLL Hijacking - WinAppXRT.dll
+  type: bool
+
+- name: T1574.001 - 3
+  description: Phantom DLL Hijacking - ualapi.dll
+  type: bool
+
+- name: T1574.001 - 4
+  description: DLL Side-Loading using Notepad++ GUP.exe
+  type: bool
+
+- name: T1574.001 - 5
+  description: DLL Side-Loading using dotnet startup hook
+  type: bool
+
+- name: T1574.001 - 6
+  description: DLL Search Order Hijacking and Side-Loading via KeyScrambler.exe
+  type: bool
+
 
 - name: T1574.002 - 1
   description: DLL Side-Loading - DLL Side-Loading using the Notepad++ GUP.exe 
@@ -599,6 +1350,11 @@ parameters:
     mavinject.exe
   type: bool
 
+- name: T1055.001 - 2
+  description: WinPwn - Get SYSTEM shell - Bind System Shell using UsoClient DLL load technique
+    mavinject.exe
+  type: bool
+
 - name: T1546.012 - 1
   description: Image File Execution Options Injection - IFEO Add Debugger
   type: bool
@@ -607,8 +1363,24 @@ parameters:
   description: Image File Execution Options Injection - IFEO Global Flags
   type: bool
 
+- name: T1546.012 - 3
+  description: GlobalFlags in Image File Execution Options
+  type: bool
+
 - name: T1078.003 - 1
   description: Local Accounts - Create local account with admin privileges
+  type: bool
+
+- name: T1078.003 - 6
+  description: WinPwn - Loot local Credentials - powerhell kittie
+  type: bool
+
+- name: T1078.003 - 7
+  description: WinPwn - Loot local Credentials - Safetykatz
+  type: bool
+
+- name: T1078.003 - 13
+  description: Use PsExec to elevate to NT Authority\SYSTEM account
   type: bool
 
 - name: T1037.001 - 1
@@ -664,6 +1436,14 @@ parameters:
   description: Process Hollowing - RunPE via VBA
   type: bool
 
+- name: T1055.012 - 3
+  description: Process Hollowing in Go using CreateProcessW WinAPI
+  type: bool
+
+- name: T1055.012 - 4
+  description: Process Hollowing in Go using CreateProcessW and CreatePipe WinAPIs (T1055.012)
+  type: bool
+
 - name: T1055 - 1
   description: Process Injection - Shellcode execution via VBA
   type: bool
@@ -705,6 +1485,58 @@ parameters:
     to User Startup Folder
   type: bool
 
+- name: T1547.001 - 8
+  description: Add persistance via Recycle bin
+  type: bool
+
+- name: T1547.001 - 9
+  description: SystemBC Malware-as-a-Service Registry
+  type: bool
+
+- name: T1547.001 - 10
+  description: Change Startup Folder - HKLM Modify User Shell Folders Common Startup Value
+  type: bool
+
+- name: T1547.001 - 11
+  description: Change Startup Folder - HKCU Modify User Shell Folders Startup Value
+  type: bool
+
+- name: T1547.001 - 12
+  description: HKCU - Policy Settings Explorer Run Key
+  type: bool
+
+- name: T1547.001 - 13
+  description: HKLM - Policy Settings Explorer Run Key
+  type: bool
+
+- name: T1547.001 - 14
+  description: HKLM - Append Command to Winlogon Userinit KEY Value
+  type: bool
+
+- name: T1547.001 - 15
+  description: HKLM - Modify default System Shell - Winlogon Shell KEY Value
+  type: bool
+
+- name: T1547.001 - 16
+  description: secedit used to create a Run key in the HKLM Hive
+  type: bool
+
+- name: T1547.001 - 17
+  description: Modify BootExecute Value
+  type: bool
+
+- name: T1547.001 - 18
+  description: Allowing custom application to execute during new RDP logon session
+  type: bool
+
+- name: T1547.001 - 19
+  description: Creating Boot Verification Program Key for application execution during successful boot
+  type: bool
+
+- name: T1547.001 - 20
+  description: Add persistence via Windows Context Menu
+  type: bool
+
 - name: T1053.005 - 1
   description: Scheduled Task - Scheduled Task Startup Script
   type: bool
@@ -729,6 +1561,30 @@ parameters:
   description: Scheduled Task - WMI Invoke-CimMethod Scheduled Task
   type: bool
 
+- name: T1053.005 - 7
+  description: Scheduled Task Executing Base64 Encoded Commands From Registry
+  type: bool
+
+- name: T1053.005 - 8
+  description: Import XML Schedule Task with Hidden Attribute
+  type: bool
+
+- name: T1053.005 - 9
+  description: PowerShell Modify A Scheduled Task
+  type: bool
+
+- name: T1053.005 - 10
+  description: Scheduled Task ("Ghost Task") via Registry Key Manipulation
+  type: bool
+
+- name: T1053.005 - 11
+  description: Scheduled Task Persistence via CompMgmt.msc
+  type: bool
+
+- name: T1053.005 - 12
+  description: Scheduled Task Persistence via Eventviewer.msc
+  type: bool
+
 - name: T1546.002 - 1
   description: Screensaver - Set Arbitrary Binary as Screensaver
   type: bool
@@ -737,9 +1593,21 @@ parameters:
   description: Security Support Provider - Modify SSP configuration in registry
   type: bool
 
+- name: T1547.005 - 2
+  description: Modify HKLM:\System\CurrentControlSet\Control\Lsa\OSConfig Security Support Provider configuration in registry
+  type: bool
+
 - name: T1574.011 - 1
   description: Services Registry Permissions Weakness - Service Registry 
     Permissions Weakness
+  type: bool
+
+- name: T1654 - 1
+  description: Get-EventLog To Enumerate Windows Security Log
+  type: bool
+
+- name: T1654 - 2
+  description: Enumerate Windows Security Log via WevtUtil
   type: bool
 
 - name: T1574.011 - 2
@@ -763,9 +1631,29 @@ parameters:
   description: Token Impersonation/Theft - `SeDebugPrivilege` token duplication
   type: bool
 
+- name: T1134.001 - 3
+  description: Launch NSudo Executable
+  type: bool
+
+- name: T1134.001 - 4
+  description: Bad Potato
+  type: bool
+
+- name: T1134.001 - 5
+  description: Juicy Potato
+  type: bool
+
 - name: T1546.003 - 1
   description: Windows Management Instrumentation Event Subscription - 
     Persistence via WMI Event Subscription
+  type: bool
+
+- name: T1546.003 - 2
+  description: Persistence via WMI Event Subscription - ActiveScriptEventConsumer
+  type: bool
+
+- name: T1546.003 - 3
+  description: Windows MOFComp.exe Load MOF File
   type: bool
 
 - name: T1543.003 - 1
@@ -780,6 +1668,19 @@ parameters:
   description: Windows Service - Service Installation PowerShell
   type: bool
 
+- name: T1543.003 - 4
+  description: TinyTurla backdoor service w64time
+  type: bool
+
+- name: T1543.003 - 5
+  description: Remote Service Installation CMD
+  type: bool
+
+- name: T1543.003 - 6
+  description: Modify Service to Run Arbitrary Binary (Powershell)
+  type: bool
+
+
 - name: T1547.004 - 1
   description: Winlogon Helper DLL - Winlogon Shell Key Persistence - PowerShell
   type: bool
@@ -792,6 +1693,14 @@ parameters:
 - name: T1547.004 - 3
   description: Winlogon Helper DLL - Winlogon Notify Key Logon Persistence - 
     PowerShell
+  type: bool
+
+- name: T1547.004 - 4
+  description: Winlogon HKLM Shell Key Persistence - PowerShell
+  type: bool
+
+- name: T1547.004 - 5
+  description: Winlogon HKLM Userinit Key Persistence - PowerShell
   type: bool
 
 - name: T1197 - 1
@@ -903,20 +1812,39 @@ parameters:
   type: bool
 
 - name: T1562.002 - 2
-  description: Disable Windows Event Logging - Kill Event Log Service Threads
+  description: Disable Windows Event Logging - Disable Windows IIS HTTP Logging via PowerShell
   type: bool
 
 - name: T1562.002 - 3
-  description: Disable Windows Event Logging - Impair Windows Audit Log Policy
+  description: Disable Windows Event Logging - Kill Event Log Service Threads
   type: bool
 
 - name: T1562.002 - 4
-  description: Disable Windows Event Logging - Clear Windows Audit Policy Config
+  description: Disable Windows Event Logging - Impair Windows Audit Log Policy
   type: bool
 
 - name: T1562.002 - 5
-  description: Disable Windows Event Logging - Disable Event Logging with 
-    wevtutil
+  description: Disable Windows Event Logging - Clear Windows Audit Policy Config
+  type: bool
+
+- name: T1562.002 - 6
+  description: Disable Windows Event Logging - Disable Event Logging with wevtutil
+  type: bool
+
+- name: T1562.002 - 7
+  description: Disable Windows Event Logging - Makes Eventlog blind with Phant0m
+  type: bool
+
+- name: T1562.002 - 8
+  description: Disable Windows Event Logging - Modify Event Log Channel Access Permissions via Registry - PowerShell
+  type: bool
+
+- name: T1562.002 - 9
+  description: Disable Windows Event Logging - Modify Event Log Channel Access Permissions via Registry 2 - PowerShell
+  type: bool
+
+- name: T1562.002 - 10
+  description: Disable Windows Event Logging - Modify Event Log Access Permissions via Registry - PowerShell
   type: bool
 
 - name: T1562.004 - 1
@@ -949,75 +1877,174 @@ parameters:
     Firewall Located in Non-Standard Location
   type: bool
 
-- name: T1562.001 - 10
-  description: Disable or Modify Tools - Unload Sysmon Filter Driver
+- name: T1562.004 - 20
+  description: LockBit Black - Unusual Windows firewall registry modification (cmd)
+  type: bool
+
+- name: T1562.004 - 21
+  description: LockBit Black - Unusual Windows firewall registry modification (PowerShell)
+  type: bool
+
+- name: T1562.004 - 22
+  description: Blackbit - Disable Windows Firewall using netsh firewall
+  type: bool
+
+- name: T1562.004 - 24
+  description: Set a firewall rule using New-NetFirewallRule
   type: bool
 
 - name: T1562.001 - 11
-  description: Disable or Modify Tools - Uninstall Sysmon
+  description: Unload Sysmon Filter Driver
   type: bool
 
 - name: T1562.001 - 12
-  description: Disable or Modify Tools - AMSI Bypass - AMSI InitFailed
+  description: Uninstall Sysmon
   type: bool
 
 - name: T1562.001 - 13
-  description: Disable or Modify Tools - AMSI Bypass - Remove AMSI Provider Reg 
-    Key
+  description: AMSI Bypass - AMSI InitFailed
   type: bool
 
 - name: T1562.001 - 14
-  description: Disable or Modify Tools - Disable Arbitrary Security Windows 
-    Service
+  description: AMSI Bypass - Remove AMSI Provider Reg Key
   type: bool
 
 - name: T1562.001 - 15
-  description: Disable or Modify Tools - Tamper with Windows Defender ATP 
-    PowerShell
+  description: Disable Arbitrary Security Windows Service
   type: bool
 
 - name: T1562.001 - 16
-  description: Disable or Modify Tools - Tamper with Windows Defender Command 
-    Prompt
+  description: Tamper with Windows Defender ATP PowerShell
   type: bool
 
 - name: T1562.001 - 17
-  description: Disable or Modify Tools - Tamper with Windows Defender Registry
+  description: Tamper with Windows Defender Command Prompt
   type: bool
 
 - name: T1562.001 - 18
-  description: Disable or Modify Tools - Disable Microsoft Office Security 
-    Features
+  description: Tamper with Windows Defender Registry
   type: bool
 
 - name: T1562.001 - 19
-  description: Disable or Modify Tools - Remove Windows Defender Definition 
-    Files
+  description: Disable Microsoft Office Security Features
   type: bool
 
 - name: T1562.001 - 20
-  description: Disable or Modify Tools - Stop and Remove Arbitrary Security 
-    Windows Service
+  description: Remove Windows Defender Definition Files
   type: bool
 
 - name: T1562.001 - 21
-  description: Disable or Modify Tools - Uninstall Crowdstrike Falcon on Windows
+  description: Stop and Remove Arbitrary Security Windows Service
   type: bool
 
 - name: T1562.001 - 22
-  description: Disable or Modify Tools - Tamper with Windows Defender Evade 
-    Scanning -Folder
+  description: Uninstall Crowdstrike Falcon on Windows
   type: bool
 
 - name: T1562.001 - 23
-  description: Disable or Modify Tools - Tamper with Windows Defender Evade 
-    Scanning -Extension
+  description: Tamper with Windows Defender Evade Scanning -Folder
   type: bool
 
 - name: T1562.001 - 24
-  description: Disable or Modify Tools - Tamper with Windows Defender Evade 
-    Scanning -Process
+  description: Tamper with Windows Defender Evade Scanning -Extension
   type: bool
+
+- name: T1562.001 - 25
+  description: Tamper with Windows Defender Evade Scanning -Process
+  type: bool
+
+- name: T1562.001 - 27
+  description: Disable Windows Defender with DISM
+  type: bool
+
+- name: T1562.001 - 28
+  description: Disable Defender Using NirSoft AdvancedRun
+  type: bool
+
+- name: T1562.001 - 29
+  description: Kill antimalware protected processes using Backstab
+  type: bool
+
+- name: T1562.001 - 30
+  description: WinPwn - Kill the event log services for stealth
+  type: bool
+
+- name: T1562.001 - 31
+  description: Tamper with Windows Defender ATP using Aliases - PowerShell
+  type: bool
+
+- name: T1562.001 - 32
+  description: LockBit Black - Disable Privacy Settings Experience Using Registry -cmd
+  type: bool
+
+- name: T1562.001 - 33
+  description: LockBit Black - Use Registry Editor to turn on automatic logon -cmd
+  type: bool
+
+- name: T1562.001 - 34
+  description: LockBit Black - Disable Privacy Settings Experience Using Registry -Powershell
+  type: bool
+
+- name: T1562.001 - 35
+  description: Lockbit Black - Use Registry Editor to turn on automatic logon -Powershell
+  type: bool
+
+- name: T1562.001 - 36
+  description: Disable Windows Defender with PwSh Disable-WindowsOptionalFeature
+  type: bool
+
+- name: T1562.001 - 38
+  description: Delete Windows Defender Scheduled Tasks
+  type: bool
+
+- name: T1562.001 - 44
+  description: Disable Hypervisor-Enforced Code Integrity (HVCI)
+  type: bool
+
+- name: T1562.001 - 45
+  description: AMSI Bypass - Override AMSI via COM
+  type: bool
+
+- name: T1562.001 - 48
+  description: Tamper with Windows Defender Registry - Reg.exe
+  type: bool
+
+- name: T1562.001 - 49
+  description: Tamper with Windows Defender Registry - Powershell
+  type: bool
+
+- name: T1562.001 - 50
+  description: ESXi - Disable Account Lockout Policy via PowerCLI
+  type: bool
+
+- name: T1562.001 - 51
+  description: Delete Microsoft Defender ASR Rules - InTune
+  type: bool
+
+- name: T1562.001 - 52
+  description: Delete Microsoft Defender ASR Rules - GPO
+  type: bool
+
+- name: T1562.001 - 53
+  description: AMSI Bypass - Create AMSIEnable Reg Key
+  type: bool
+
+- name: T1562.001 - 54
+  description: Disable EventLog-Application Auto Logger Session Via Registry - Cmd
+  type: bool
+
+- name: T1562.001 - 55
+  description: Disable EventLog-Application Auto Logger Session Via Registry - PowerShell
+  type: bool
+
+- name: T1562.001 - 56
+  description: Disable EventLog-Application ETW Provider Via Registry - Cmd
+  type: bool
+
+- name: T1562.001 - 57
+  description: Disable EventLog-Application ETW Provider Via Registry - PowerShell
+  type: bool
+
 
 - name: T1070.004 - 4
   description: File Deletion - Delete a single file - Windows cmd
@@ -1044,31 +2071,54 @@ parameters:
   type: bool
 
 - name: T1564.001 - 3
-  description: Hidden Files and Directories - Create Windows System File with 
-    Attrib
+  description: Create Windows System File with Attrib
+  type: bool
+- name: T1564.001 - 4
+  description: Create Windows Hidden File with Attrib
+  type: bool
+- name: T1564.001 - 8
+  description: Hide Files Through Registry
+  type: bool
+- name: T1564.001 - 9
+  description: Create Windows Hidden File with PowerShell
+  type: bool
+- name: T1564.001 - 10
+  description: Create Windows System File with PowerShell
   type: bool
 
-- name: T1564.001 - 4
-  description: Hidden Files and Directories - Create Windows Hidden File with 
-    Attrib
-  type: bool
 
 - name: T1564.003 - 1
-  description: Hidden Window - Hidden Window
+  description: Hidden PowerShell Window launching calc.exe
+  type: bool
+
+- name: T1564.003 - 2
+  description: Headless Browser Accessing Mockbin
+  type: bool
+
+- name: T1564.003 - 3
+  description: Hidden Window-Conhost Execution
   type: bool
 
 - name: T1564 - 1
-  description: Hide Artifacts - Extract binary files via VBA
+  description: Extract binary files via VBA (requires MS Word)
   type: bool
 
 - name: T1564 - 2
-  description: Hide Artifacts - Create a Hidden User Called "$"
+  description: Create a hidden user called "$"
   type: bool
 
 - name: T1564 - 3
-  description: Hide Artifacts - Create an "Administrator " user (with a space on
-    the end)
+  description: Create an "Administrator " user (with space at end)
   type: bool
+
+- name: T1564 - 4
+  description: Create and hide a service using sc.exe and sdset
+  type: bool
+
+- name: T1564 - 5
+  description: Execute command via NirCmd (e.g. hide tray clock)
+  type: bool
+
 
 - name: T1070 - 1
   description: Indicator Removal on Host - Indicator Removal using FSUtil
@@ -1089,13 +2139,25 @@ parameters:
     conhost.exe
   type: bool
 
-- name: T1553.004 - 4
-  description: Install Root Certificate - Install root CA on Windows
+- name: T1202 - 4
+  description: Indirect Command Execution - Scriptrunner.exe
+  type: bool
+
+- name: T1202 - 5
+  description: Indirect Command Execution - RunMRU Dialog
   type: bool
 
 - name: T1553.004 - 5
+  description: Install Root Certificate - Install root CA on Windows
+  type: bool
+
+- name: T1553.004 - 6
   description: Install Root Certificate - Install root CA on Windows with 
     certutil
+  type: bool
+
+- name: T1553.004 - 7
+  description: Add Root Certificate to CurrentUser Certificate Store
   type: bool
 
 - name: T1218.004 - 1
@@ -1153,6 +2215,10 @@ parameters:
     data stream
   type: bool
 
+- name: T1553.005 - 4
+  description: Execute LNK file from ISO
+  type: bool
+
 - name: T1036.004 - 1
   description: Masquerade Task or Service - Creating W32Time similar named 
     service using schtasks
@@ -1189,6 +2255,342 @@ parameters:
 
 - name: T1112 - 6
   description: Modify Registry - Change Powershell Execution Policy to Bypass
+  type: bool
+
+- name: T1112 - 7
+  description: Change Powershell Execution Policy to Bypass
+  type: bool
+
+- name: T1112 - 8
+  description: BlackByte Ransomware Registry Changes - CMD
+  type: bool
+
+- name: T1112 - 9
+  description: BlackByte Ransomware Registry Changes - Powershell
+  type: bool
+
+- name: T1112 - 10
+  description: Disable Windows Registry Tool
+  type: bool
+
+- name: T1112 - 11
+  description: Disable Windows CMD application
+  type: bool
+
+- name: T1112 - 12
+  description: Disable Windows Task Manager application
+  type: bool
+
+- name: T1112 - 13
+  description: Disable Windows Notification Center
+  type: bool
+
+- name: T1112 - 14
+  description: Disable Windows Shutdown Button
+  type: bool
+
+- name: T1112 - 15
+  description: Disable Windows LogOff Button
+  type: bool
+
+- name: T1112 - 16
+  description: Disable Windows Change Password Feature
+  type: bool
+
+- name: T1112 - 17
+  description: Disable Windows Lock Workstation Feature
+  type: bool
+
+- name: T1112 - 18
+  description: Activate Windows NoDesktop Group Policy Feature
+  type: bool
+
+- name: T1112 - 19
+  description: Activate Windows NoRun Group Policy Feature
+  type: bool
+
+- name: T1112 - 20
+  description: Activate Windows NoFind Group Policy Feature
+  type: bool
+
+- name: T1112 - 21
+  description: Activate Windows NoControlPanel Group Policy Feature
+  type: bool
+
+- name: T1112 - 22
+  description: Activate Windows NoFileMenu Group Policy Feature
+  type: bool
+
+- name: T1112 - 23
+  description: Activate Windows NoClose Group Policy Feature
+  type: bool
+
+- name: T1112 - 24
+  description: Activate Windows NoSetTaskbar Group Policy Feature
+  type: bool
+
+- name: T1112 - 25
+  description: Activate Windows NoTrayContextMenu Group Policy Feature
+  type: bool
+
+- name: T1112 - 26
+  description: Activate Windows NoPropertiesMyDocuments Group Policy Feature
+  type: bool
+
+- name: T1112 - 27
+  description: Hide Windows Clock Group Policy Feature
+  type: bool
+
+- name: T1112 - 28
+  description: Windows HideSCAHealth Group Policy Feature
+  type: bool
+
+- name: T1112 - 29
+  description: Windows HideSCANetwork Group Policy Feature
+  type: bool
+
+- name: T1112 - 30
+  description: Windows HideSCAPower Group Policy Feature
+  type: bool
+
+- name: T1112 - 31
+  description: Windows HideSCAVolume Group Policy Feature
+  type: bool
+
+- name: T1112 - 32
+  description: Windows Modify Show Compress Color And Info Tip Registry
+  type: bool
+
+- name: T1112 - 33
+  description: Windows Powershell Logging Disabled
+  type: bool
+
+- name: T1112 - 34
+  description: Windows Add Registry Value to Load Service in Safe Mode without Network
+  type: bool
+
+- name: T1112 - 35
+  description: Windows Add Registry Value to Load Service in Safe Mode with Network
+  type: bool
+
+- name: T1112 - 36
+  description: Disable Windows Toast Notifications
+  type: bool
+
+- name: T1112 - 37
+  description: Disable Windows Security Center Notifications
+  type: bool
+
+- name: T1112 - 38
+  description: Suppress Win Defender Notifications
+  type: bool
+
+- name: T1112 - 39
+  description: Allow RDP Remote Assistance Feature
+  type: bool
+
+- name: T1112 - 40
+  description: NetWire RAT Registry Key Creation
+  type: bool
+
+- name: T1112 - 41
+  description: Ursnif Malware Registry Key Creation
+  type: bool
+
+- name: T1112 - 42
+  description: Terminal Server Client Connection History Cleared
+  type: bool
+
+- name: T1112 - 43
+  description: Disable Windows Error Reporting Settings
+  type: bool
+
+- name: T1112 - 44
+  description: DisallowRun Execution Of Certain Applications
+  type: bool
+
+- name: T1112 - 45
+  description: Enabling Restricted Admin Mode via Command_Prompt
+  type: bool
+
+- name: T1112 - 46
+  description: Mimic Ransomware - Enable Multiple User Sessions
+  type: bool
+
+- name: T1112 - 47
+  description: Mimic Ransomware - Allow Multiple RDP Sessions per User
+  type: bool
+
+- name: T1112 - 48
+  description: Event Viewer Registry Modification - Redirection URL
+  type: bool
+
+- name: T1112 - 49
+  description: Event Viewer Registry Modification - Redirection Program
+  type: bool
+
+- name: T1112 - 50
+  description: Enabling Remote Desktop Protocol via Remote Registry
+  type: bool
+
+- name: T1112 - 51
+  description: Disable Win Defender Notification
+  type: bool
+
+- name: T1112 - 52
+  description: Disable Windows OS Auto Update
+  type: bool
+
+- name: T1112 - 53
+  description: Disable Windows Auto Reboot for current logon user
+  type: bool
+
+- name: T1112 - 54
+  description: Windows Auto Update Option to Notify before download
+  type: bool
+
+- name: T1112 - 55
+  description: Do Not Connect To Win Update
+  type: bool
+
+- name: T1112 - 56
+  description: Tamper Win Defender Protection
+  type: bool
+
+- name: T1112 - 57
+  description: Snake Malware Registry Blob
+  type: bool
+
+- name: T1112 - 58
+  description: Allow Simultaneous Download Registry
+  type: bool
+
+- name: T1112 - 59
+  description: Modify Internet Zone Protocol Defaults in Current User Registry - cmd
+  type: bool
+
+- name: T1112 - 60
+  description: Modify Internet Zone Protocol Defaults in Current User Registry - PowerShell
+  type: bool
+
+- name: T1112 - 61
+  description: Activities To Disable Secondary Authentication Detected By Modified Registry Value.
+  type: bool  
+
+- name: T1112 - 62
+  description: Activities To Disable Microsoft [FIDO Aka Fast IDentity Online] Authentication Detected By Modified Registry Value.
+  type: bool  
+
+- name: T1112 - 63
+  description: Scarab Ransomware Defense Evasion Activities
+  type: bool  
+
+- name: T1112 - 64
+  description: Disable Remote Desktop Anti-Alias Setting Through Registry
+  type: bool  
+
+- name: T1112 - 65
+  description: Disable Remote Desktop Security Settings Through Registry
+  type: bool  
+
+- name: T1112 - 66
+  description: Disabling ShowUI Settings of Windows Error Reporting (WER)
+  type: bool 
+
+- name: T1112 - 67
+  description: Enable Proxy Settings
+  type: bool 
+
+- name: T1112 - 68
+  description: Set-Up Proxy Server
+  type: bool 
+
+- name: T1112 - 69
+  description: RDP Authentication Level Override
+  type: bool 
+
+- name: T1112 - 70
+  description: Enable RDP via Registry (fDenyTSConnections)
+  type: bool
+
+- name: T1112 - 71
+  description: Disable Windows Prefetch Through Registry
+  type: bool
+
+- name: T1112 - 72
+  description: Setting Shadow key in Registry for RDP Shadowing
+  type: bool
+
+- name: T1112 - 73
+  description: Flush Shimcache
+  type: bool
+
+- name: T1112 - 74
+  description: Disable Windows Remote Desktop Protocol
+  type: bool
+
+- name: T1112 - 75
+  description: Enforce Smart Card Authentication Through Registry
+  type: bool
+
+- name: T1112 - 76
+  description: Requires the BitLocker PIN for Pre-boot authentication
+  type: bool
+
+- name: T1112 - 77
+  description: Modify EnableBDEWithNoTPM Registry entry
+  type: bool
+
+- name: T1112 - 78
+  description: Modify UseTPM Registry entry
+  type: bool
+
+- name: T1112 - 79
+  description: Modify UseTPMPIN Registry entry
+  type: bool
+
+- name: T1112 - 80
+  description: Modify UseTPMKey Registry entry
+  type: bool
+
+- name: T1112 - 81
+  description: Modify UseTPMKeyPIN Registry entry
+  type: bool
+
+- name: T1112 - 82
+  description: Modify EnableNonTPM Registry entry
+  type: bool
+
+- name: T1112 - 83
+  description: Modify UsePartialEncryptionKey Registry entry
+  type: bool
+
+- name: T1112 - 84
+  description: Modify UsePIN Registry entry
+  type: bool
+
+- name: T1112 - 85
+  description: Abusing Windows TelemetryController Registry Key for Persistence
+  type: bool
+
+- name: T1112 - 86
+  description: Modify RDP-Tcp Initial Program Registry Entry
+  type: bool
+
+- name: T1112 - 87
+  description: Abusing MyComputer Disk Cleanup Path for Persistence
+  type: bool
+
+- name: T1112 - 88
+  description: Abusing MyComputer Disk Fragmentation Path for Persistence
+  type: bool
+
+- name: T1112 - 89
+  description: Abusing MyComputer Disk Backup Path for Persistence
+  type: bool
+
+- name: T1112 - 90
+  description: Adding custom paths for application execution
   type: bool
 
 - name: T1218.005 - 1
@@ -1238,15 +2640,47 @@ parameters:
   type: bool
 
 - name: T1218.007 - 1
-  description: Msiexec - Msiexec.exe - Execute Local MSI file
+  description: Msiexec.exe - Execute Local MSI file with embedded JScript
   type: bool
 
 - name: T1218.007 - 2
-  description: Msiexec - Msiexec.exe - Execute Remote MSI file
+  description: Msiexec.exe - Execute Local MSI file with embedded VBScript
   type: bool
 
 - name: T1218.007 - 3
-  description: Msiexec - Msiexec.exe - Execute Arbitrary DLL
+  description: Msiexec.exe - Execute Local MSI file with an embedded DLL
+  type: bool
+
+- name: T1218.007 - 4
+  description: Msiexec.exe - Execute Local MSI file with an embedded EXE
+  type: bool
+
+- name: T1218.007 - 5
+  description: WMI Win32_Product Class - Execute Local MSI file with embedded JScript
+  type: bool
+
+- name: T1218.007 - 6
+  description: WMI Win32_Product Class - Execute Local MSI file with embedded VBScript
+  type: bool
+
+- name: T1218.007 - 7
+  description: WMI Win32_Product Class - Execute Local MSI file with an embedded DLL
+  type: bool
+
+- name: T1218.007 - 8
+  description: WMI Win32_Product Class - Execute Local MSI file with an embedded EXE
+  type: bool
+
+- name: T1218.007 - 9
+  description: Msiexec.exe - Execute the DllRegisterServer function of a DLL
+  type: bool
+
+- name: T1218.007 - 10
+  description: Msiexec.exe - Execute the DllUnregisterServer function of a DLL
+  type: bool
+
+- name: T1218.007 - 11
+  description: Msiexec.exe - Execute Remote MSI file
   type: bool
 
 - name: T1564.004 - 1
@@ -1265,6 +2699,10 @@ parameters:
   description: NTFS File Attributes - Create ADS PowerShell
   type: bool
 
+- name: T1564.004 - 5
+  description: Create Hidden Directory via $index_allocation
+  type: bool
+
 - name: T1070.005 - 1
   description: Network Share Connection Removal - Add Network Share
   type: bool
@@ -1275,6 +2713,16 @@ parameters:
 
 - name: T1070.005 - 3
   description: Network Share Connection Removal - Remove Network Share 
+    PowerShell
+  type: bool
+
+- name: T1070.005 - 4
+  description: Disable Administrative Share Creation at Startup
+    PowerShell
+  type: bool
+
+- name: T1070.005 - 5
+  description: Remove Administrative Shares
     PowerShell
   type: bool
 
@@ -1316,6 +2764,10 @@ parameters:
   description: Odbcconf - Odbcconf.exe - Execute Arbitrary DLL
   type: bool
 
+- name: T1218.008 - 2
+  description: Odbcconf.exe - Load Response File
+  type: bool
+
 - name: T1550.002 - 1
   description: Pass the Hash - Mimikatz Pass the Hash
   type: bool
@@ -1324,8 +2776,16 @@ parameters:
   description: Pass the Hash - crackmapexec Pass the Hash
   type: bool
 
+- name: T1550.002 - 3
+  description: Invoke-WMIExec Pass the Hash
+  type: bool
+
 - name: T1550.003 - 1
   description: Pass the Ticket - Mimikatz Kerberos Ticket Attack
+  type: bool
+
+- name: T1550.003 - 2
+  description: Rubeus Kerberos Pass The Ticket
   type: bool
 
 - name: T1216.001 - 1
@@ -1440,6 +2900,36 @@ parameters:
   description: Rundll32 - Launches an executable using Rundll32 and pcwutl.dll
   type: bool
 
+- name: T1218.011 - 10
+  description: Execution of non-dll using rundll32.exe
+  type: bool
+
+- name: T1218.011 - 11
+  description: Rundll32 with Ordinal Value
+  type: bool
+
+- name: T1218.011 - 12
+  description: Rundll32 with Control_RunDLL
+  type: bool
+
+
+- name: T1218.011 - 13
+  description: Rundll32 with desk.cpl
+  type: bool
+
+- name: T1218.011 - 14
+  description: Running DLL with .init extension and function
+  type: bool
+
+- name: T1218.011 - 15
+  description: Rundll32 execute command via FileProtocolHandler
+  type: bool
+
+- name: T1218.011 - 16
+  description: Rundll32 execute payload by calling RouteTheCall
+  type: bool
+
+
 - name: T1218 - 1
   description: Signed Binary Proxy Execution - mavinject - Inject DLL into 
     running process
@@ -1490,8 +2980,12 @@ parameters:
     Command Execution
   type: bool
 
-- name: T1497.001 - 2
+- name: T1497.001 - 3
   description: System Checks - Detect Virtualization Environment (Windows)
+  type: bool
+
+- name: T1497.001 - 5
+  description: Detect Virtualization Environment via WMI Manufacturer/Model Listing (Windows)
   type: bool
 
 - name: T1221 - 1
@@ -1542,6 +3036,10 @@ parameters:
     Access to folder for Everyone - Ryuk Ransomware Style
   type: bool
 
+- name: T1222.001 - 6
+  description: SubInAcl Execution
+  type: bool
+
 - name: T1220 - 1
   description: XSL Script Processing - MSXSL Bypass using local files
   type: bool
@@ -1566,9 +3064,58 @@ parameters:
   description: Account Manipulation - Domain Account and Group Manipulate
   type: bool
 
+
+- name: T1098 - 9
+  description: Password Change on Directory Service Restore Mode (DSRM) Account
+  type: bool
+
+- name: T1098 - 10
+  description: Domain Password Policy Check Short Password
+  type: bool
+
+- name: T1098 - 11
+  description: Domain Password Policy Check No Number in Password
+  type: bool
+
+- name: T1098 - 12
+  description: Domain Password Policy Check No Special Character in Password
+  type: bool
+
+- name: T1098 - 13
+  description: Domain Password Policy Check No Uppercase Character in Password
+  type: bool
+
+- name: T1098 - 14
+  description: Domain Password Policy Check No Lowercase Character in Password
+  type: bool
+
+- name: T1098 - 15
+  description: Domain Password Policy Check Only Two Character Classes
+  type: bool
+
+- name: T1098 - 16
+  description: Domain Password Policy Check Common Password Use
+  type: bool
+
 - name: T1137.006 - 1
   description: Add-ins - Code Executed Via Excel Add-in File (Xll)
   type: bool
+
+- name: T1137.006 - 2
+  description: Persistent Code Execution Via Excel Add-in File (XLL)
+  type: bool
+
+- name: T1137.006 - 3
+  description: Persistent Code Execution Via Word Add-in File (WLL)
+  type: bool 
+
+- name: T1137.006 - 4
+  description: Persistent Code Execution Via Excel VBA Add-in File (XLAM)
+  type: bool 
+
+- name: T1137.006 - 5
+  description: Persistent Code Execution Via PowerPoint VBA Add-in File (PPAM)
+  type: bool 
 
 - name: T1176 - 1
   description: Browser Extensions - Chrome (Developer Mode)
@@ -1584,6 +3131,10 @@ parameters:
 
 - name: T1176 - 4
   description: Browser Extensions - Edge Chromium Addon - VPN
+  type: bool
+
+- name: T1176 - 5
+  description: Google Chrome Load Unpacked Extension With Command Line
   type: bool
 
 - name: T1136.002 - 1
@@ -1603,16 +3154,20 @@ parameters:
     Registry 2 vpn extension
   type: bool
 
-- name: T1136.001 - 3
+- name: T1136.001 - 4
   description: Local Account - Create a new user in a command prompt
   type: bool
 
-- name: T1136.001 - 4
+- name: T1136.001 - 5
   description: Local Account - Create a new user in PowerShell
   type: bool
 
-- name: T1136.001 - 6
+- name: T1136.001 - 8
   description: Local Account - Create a new Windows admin user
+  type: bool
+
+- name: T1136.001 - 9
+  description: Create a new Windows admin user via .NET
   type: bool
 
 - name: T1137 - 1
@@ -1653,8 +3208,29 @@ parameters:
     SDelete
   type: bool
 
+- name: T1485 - 3
+  description: Overwrite deleted data on C drive
+  type: bool  
+
+- name: T1485 - 5
+  description: ESXi - Delete VM Snapshots
+    SDelete
+  type: bool
+
 - name: T1486 - 5
   description: Data Encrypted for Impact - PureLocker Ransom Note
+  type: bool
+
+- name: T1486 - 8
+  description: Data Encrypted with GPG4Win
+  type: bool
+
+- name: T1486 - 9
+  description: Data Encrypt Using DiskCryptor
+  type: bool
+
+- name: T1486 - 10
+  description: Akira Ransomware drop Files with .akira Extension and Ransomnote
   type: bool
 
 - name: T1490 - 1
@@ -1694,8 +3270,28 @@ parameters:
   description: Inhibit System Recovery - Windows - Disable the SR scheduled task
   type: bool
 
+- name: T1490 - 9
+  description: Disable System Restore Through Registry
+  type: bool
+
+- name: T1490 - 10
+  description: Windows - vssadmin Resize Shadowstorage Volume
+  type: bool
+
+- name: T1490 - 11
+  description: Modify VSS Service Permissions
+  type: bool
+
 - name: T1491.001 - 1
   description: Internal Defacement - Replace Desktop Wallpaper
+  type: bool
+
+- name: T1491.001 - 2
+  description: Configure LegalNoticeCaption and LegalNoticeText registry keys to display ransom message
+  type: bool
+
+- name: T1491.001 - 3
+  description: ESXi - Change Welcome Message on Direct Console User Interface (DCUI)
   type: bool
 
 - name: T1489 - 1
@@ -1718,29 +3314,60 @@ parameters:
   description: System Shutdown/Reboot - Restart System - Windows
   type: bool
 
+- name: T1529 - 12
+  description: Logoff System - Windows
+  type: bool
+
+- name: T1529 - 13
+  description: ESXi - Terminates VMs using pkill
+  type: bool
+
+- name: T1529 - 14
+  description:  ESXi - Avoslocker enumerates VMs and forcefully kills VMs
+  type: bool
+
+- name: T1529 - 15
+  description: ESXi - vim-cmd Used to Power Off VMs
+  type: bool
+
+
+
+
+
+
+
+
 - name: T1010 - 1
   description: Application Window Discovery - List Process Main Windows - C# 
     .NET
   type: bool
 
-- name: T1217 - 4
+- name: T1217 - 5
   description: Browser Bookmark Discovery - List Google Chrome Bookmarks on 
     Windows with powershell
   type: bool
 
-- name: T1217 - 5
+- name: T1217 - 6
   description: Browser Bookmark Discovery - List Google Chrome / Edge Chromium 
     Bookmarks on Windows with command prompt
   type: bool
 
-- name: T1217 - 6
+- name: T1217 - 7
   description: Browser Bookmark Discovery - List Mozilla Firefox bookmarks on 
     Windows with command prompt
   type: bool
 
-- name: T1217 - 7
+- name: T1217 - 8
   description: Browser Bookmark Discovery - List Internet Explorer Bookmarks 
     using the command prompt
+  type: bool
+
+- name: T1217 - 10
+  description: Extract Edge Browsing History
+  type: bool
+
+- name: T1217 - 11
+  description: Extract chrome Browsing History
   type: bool
 
 - name: T1087.002 - 1
@@ -1783,6 +3410,56 @@ parameters:
 - name: T1087.002 - 10
   description: Domain Account - Enumerate Active Directory for Unconstrained 
     Delegation
+  type: bool
+
+- name: T1087.002 - 11
+  description: Get-DomainUser with PowerView
+ 
+  type: bool
+
+- name: T1087.002 - 12
+  description: Enumerate Active Directory Users with ADSISearcher
+
+  type: bool
+
+- name: T1087.002 - 13
+  description: Enumerate Linked Policies In ADSISearcher Discovery
+  type: bool
+
+- name: T1087.002 - 14
+  description: Enumerate Root Domain linked policies Discovery
+  type: bool
+
+- name: T1087.002 - 15
+  description: WinPwn - generaldomaininfo
+  type: bool
+
+- name: T1087.002 - 16
+  description: Kerbrute - userenum
+  type: bool
+
+- name: T1087.002 - 17
+  description: Wevtutil - Discover NTLM Users Remote
+  type: bool
+
+- name: T1087.002 - 18
+  description: Suspicious LAPS Attributes Query with Get-ADComputer all properties
+  type: bool
+
+- name: T1087.002 - 19
+  description: Suspicious LAPS Attributes Query with Get-ADComputer ms-Mcs-AdmPwd property
+  type: bool
+
+- name: T1087.002 - 20
+  description: Suspicious LAPS Attributes Query with Get-ADComputer all properties and SearchScope
+  type: bool
+
+- name: T1087.002 - 21
+  description: Suspicious LAPS Attributes Query with adfind all properties
+  type: bool
+
+- name: T1087.002 - 22
+  description: Suspicious LAPS Attributes Query with adfind ms-Mcs-AdmPwd
   type: bool
 
 - name: T1069.002 - 1
@@ -1863,6 +3540,18 @@ parameters:
     (PowerShell)
   type: bool
 
+- name: T1083 - 5
+  description: Simulating MAZE Directory Enumeration
+  type: bool
+
+- name: T1083 - 6
+  description: Launch DirLister Executable
+  type: bool
+
+- name: T1083 - 7
+  description: ESXi - Enumerate VMDKs available on an ESXi Host
+  type: bool
+
 - name: T1087.001 - 8
   description: Local Account - Enumerate all accounts on Windows (Local)
   type: bool
@@ -1903,44 +3592,163 @@ parameters:
   description: Network Service Scanning - Port Scan using python
   type: bool
 
-- name: T1135 - 3
-  description: Network Share Discovery - Network Share Discovery command prompt
+- name: T1046 - 5
+  description: WinPwn - spoolvulnscan
+  type: bool
+
+- name: T1046 - 6
+  description: WinPwn - MS17-10
+  type: bool
+
+- name: T1046 - 7
+  description: WinPwn - bluekeep
+  type: bool
+
+- name: T1046 - 8
+  description: WinPwn - fruit
+  type: bool
+
+- name: T1046 - 10
+  description: Port-Scanning /24 Subnet with PowerShell
+  type: bool
+
+- name: T1046 - 11
+  description: Remote Desktop Services Discovery via PowerShell
   type: bool
 
 - name: T1135 - 4
-  description: Network Share Discovery - Network Share Discovery PowerShell
+  description: Network Share Discovery - Network Share Discovery command prompt
   type: bool
 
 - name: T1135 - 5
-  description: Network Share Discovery - View available share drives
+  description: Network Share Discovery - Network Share Discovery PowerShell
   type: bool
 
 - name: T1135 - 6
+  description: Network Share Discovery - View available share drives
+  type: bool
+
+- name: T1135 - 7
   description: Network Share Discovery - Share Discovery with PowerView
   type: bool
 
-- name: T1201 - 5
-  description: Password Policy Discovery - Examine local password policy - 
-    Windows
+- name: T1135 - 8
+  description: PowerView ShareFinder
+  type: bool
+
+- name: T1135 - 9
+  description: WinPwn - shareenumeration
+  type: bool
+
+- name: T1135 - 10
+  description: Network Share Discovery via dir command
+  type: bool
+
+- name: T1135 - 11
+  description: Enumerate All Network Shares with SharpShares
+  type: bool
+
+- name: T1135 - 12
+  description: Enumerate All Network Shares with Snaffler
   type: bool
 
 - name: T1201 - 6
-  description: Password Policy Discovery - Examine domain password policy - 
+  description: Password Policy Discovery - Examine local password policy - Windows
     Windows
   type: bool
 
+- name: T1201 - 7
+  description: Examine domain password policy - Windows
+    Windows
+  type: bool
+
+- name: T1201 - 9
+  description: Get-DomainPolicy with PowerView
+  type: bool
+
+- name: T1201 - 10
+  description: Enumerate Active Directory Password Policy with get-addefaultdomainpasswordpolicy
+  type: bool
+
+- name: T1201 - 11
+  description: Enumerate Active Directory Password Policy with get-addefaultdomainpasswordpolicy
+  type: bool
+
+
+
 - name: T1120 - 1
   description: Peripheral Device Discovery - Win32_PnPEntity Hardware Inventory
+  type: bool
+
+- name: T1120 - 2
+  description: WinPwn - printercheck
+  type: bool
+
+- name: T1120 - 3
+  description: Peripheral Device Discovery via fsutil
+  type: bool
+
+- name: T1120 - 4
+  description: Get Printer Device List via PowerShell Command
   type: bool
 
 - name: T1057 - 2
   description: Process Discovery - Process Discovery - tasklist
   type: bool
 
+- name: T1057 - 3
+  description: Process Discovery - Get-Process
+
+
+- name: T1057 - 4
+  description: Process Discovery - get-wmiObject
+  type: bool
+
+- name: T1057 - 5
+  description: Process Discovery - wmic process
+  type: bool
+
+- name: T1057 - 6
+  description: Discover Specific Process - tasklist
+  type: bool
+
+- name: T1057 - 7
+  description: Process Discovery - Process Hacker
+  type: bool
+
+- name: T1057 - 8
+  description: Process Discovery - PC Hunter
+  type: bool
+
+- name: T1057 - 9
+  description: Launch Taskmgr from cmd to View running processes
+  type: bool
+
 - name: T1012 - 1
   description: Query Registry - Query Registry
   type: bool
 
+- name: T1012 - 2
+  description: Query Registry with Powershell cmdlets
+  type: bool
+
+- name: T1012 - 3
+  description: Enumerate COM Objects in Registry with Powershell
+  type: bool
+
+- name: T1012 - 4
+  description: Reg query for AlwaysInstallElevated status
+  type: bool
+
+- name: T1012 - 5
+  description: Check Software Inventory Logging (SIL) status via Registry
+  type: bool
+
+- name: T1012 - 6
+  description: Inspect SystemStartOptions Value in Registry
+  type: bool
+
+  
 - name: T1018 - 1
   description: Remote System Discovery - Remote System Discovery - net
   type: bool
@@ -1979,6 +3787,41 @@ parameters:
   description: Remote System Discovery - Adfind - Enumerate Active Directory 
     Domain Controller Objects
   type: bool
+
+- name: T1018 - 16
+  description: Enumerate domain computers within Active Directory using DirectorySearcher
+  type: bool
+
+- name: T1018 - 17
+  description: Enumerate Active Directory Computers with Get-AdComputer
+    Domain Controller Objects
+  type: bool
+
+- name: T1018 - 18
+  description: Enumerate Active Directory Computers with ADSISearcher
+    Domain Controller Objects
+  type: bool
+
+- name: T1018 - 19
+  description: Get-DomainController with PowerView
+    Domain Controller Objects
+  type: bool
+
+
+- name: T1018 - 20
+  description: Get-WmiObject to Enumerate Domain Controllers
+  type: bool
+
+
+- name: T1018 - 21
+  description: Remote System Discovery - net group Domain Controller
+  type: bool
+
+
+- name: T1018 - 22
+  description: Enumerate Remote Hosts with Netscan
+  type: bool
+
 
 - name: T1518.001 - 1
   description: Security Software Discovery - Security Software Discovery
@@ -2027,6 +3870,98 @@ parameters:
 - name: T1082 - 10
   description: System Information Discovery - Environment variables discovery on
     windows
+  type: bool
+
+- name: T1082 - 14
+  description: WinPwn - winPEAS
+  type: bool
+
+- name: T1082 - 15
+  description: WinPwn - itm4nprivesc
+  type: bool
+
+- name: T1082 - 16
+  description: WinPwn - Powersploits privesc checks
+  type: bool
+
+- name: T1082 - 17
+  description: WinPwn - General privesc checks
+  type: bool
+
+- name: T1082 - 18
+  description: WinPwn - GeneralRecon
+  type: bool
+
+- name: T1082 - 19
+  description: WinPwn - Morerecon
+  type: bool
+
+- name: T1082 - 20
+  description: WinPwn - RBCD-Check
+  type: bool
+
+- name: T1082 - 21
+  description: WinPwn - PowerSharpPack - Watson searching for missing windows patches
+  type: bool
+
+- name: T1082 - 22
+  description: WinPwn - PowerSharpPack - Sharpup checking common Privesc vectors
+  type: bool
+
+- name: T1082 - 23
+  description: WinPwn - PowerSharpPack - Seatbelt
+  type: bool
+
+- name: T1082 - 27
+  description: System Information Discovery with WMIC
+  type: bool
+
+- name: T1082 - 28
+  description: System Information Discovery
+  type: bool
+
+- name: T1082 - 29
+  description: Check computer location
+  type: bool
+
+- name: T1082 - 30
+  description: BIOS Information Discovery through Registry
+  type: bool
+
+- name: T1082 - 31
+  description: ESXi - VM Discovery using ESXCLI
+  type: bool
+
+- name: T1082 - 32
+  description: ESXi - Darkside system information discovery
+  type: bool
+
+- name: T1082 - 34
+  description: operating system discovery
+  type: bool
+
+- name: T1082 - 35
+  description: Check OS version via "ver" command
+  type: bool
+
+- name: T1082 - 36
+  description: Display volume shadow copies with "vssadmin"
+  type: bool
+
+- name: T1082 - 37
+  description: Identify System Locale and Regional Settings with PowerShell
+  type: bool
+
+- name: T1082 - 38
+  description: Enumerate Available Drives via gdr
+  type: bool
+
+- name: T1082 - 39
+  description: Discover OS Product Name via Registry
+  type: bool
+
+- name: T1082 - 40
+  description: Discover OS Build Number via Registry
   type: bool
 
 - name: T1016 - 1
@@ -2081,6 +4016,22 @@ parameters:
     session - Stealth mode (PowerView)
   type: bool
 
+- name: T1033 - 4
+  description: User Discovery With Env Vars PowerShell Script
+  type: bool
+
+- name: T1033 - 5
+  description: GetCurrent User with PowerShell Script
+  type: bool
+
+- name: T1033 - 6
+  description: System Discovery - SocGholish whoami
+  type: bool
+
+- name: T1033 - 7
+  description: System Owner/User Discovery Using Command Prompt
+  type: bool
+
 - name: T1007 - 1
   description: System Service Discovery - System Service Discovery
   type: bool
@@ -2089,12 +4040,28 @@ parameters:
   description: System Service Discovery - System Service Discovery - net.exe
   type: bool
 
+- name: T1007 - 4
+  description: Get-Service Execution
+  type: bool
+
 - name: T1124 - 1
   description: System Time Discovery - System Time Discovery
   type: bool
 
 - name: T1124 - 2
   description: System Time Discovery - System Time Discovery - PowerShell
+  type: bool
+
+- name: T1124 - 4
+  description: System Time Discovery W32tm as a Delay
+  type: bool
+
+- name: T1124 - 5
+  description: System Time with Windows time Command
+  type: bool
+
+- name: T1124 - 6
+  description: Discover System Time Zone via Registry
   type: bool
 
 - name: T1071.004 - 1
@@ -2195,6 +4162,10 @@ parameters:
   description: Protocol Tunneling - DNS over HTTPS Long Domain Query
   type: bool
 
+- name: T1572 - 4
+  description: run ngrok
+  type: bool
+
 - name: T1219 - 1
   description: Remote Access Software - TeamViewer Files Detected Test on 
     Windows
@@ -2216,6 +4187,46 @@ parameters:
 - name: T1219 - 5
   description: Remote Access Software - ScreenConnect Application Download and 
     Install on Windows
+  type: bool
+
+- name: T1219 - 6
+  description: Ammyy Admin Software Execution
+  type: bool
+
+- name: T1219 - 7
+  description: RemotePC Software Execution
+  type: bool
+
+- name: T1219 - 8
+  description: NetSupport - RAT Execution
+  type: bool
+
+- name: T1219 - 9
+  description: UltraViewer - RAT Execution
+  type: bool
+
+- name: T1219 - 10
+  description: UltraVNC Execution
+  type: bool
+
+- name: T1219 - 11
+  description: MSP360 Connect Execution
+  type: bool
+
+- name: T1219 - 12
+  description: RustDesk Files Detected Test on Windows
+  type: bool
+
+- name: T1219 - 13
+  description: Splashtop Execution
+  type: bool
+
+- name: T1219 - 14
+  description: Splashtop Streamer Execution
+  type: bool
+
+- name: T1219 - 15
+  description: Microsoft App Quick Assist Execution
   type: bool
 
 - name: T1132.001 - 2
@@ -2240,6 +4251,27 @@ parameters:
 
 - name: T1559.002 - 3
   description: Dynamic Data Exchange - DDEAUTO
+  type: bool
+
+
+- name: T1559 - 1
+  description: Cobalt Strike Artifact Kit pipe
+  type: bool
+
+- name: T1559. - 2
+  description: Cobalt Strike Lateral Movement (psexec_psh) pipe
+  type: bool
+
+- name: T1559 - 3
+  description: Cobalt Strike SSH (postex_ssh) pipe
+  type: bool
+
+- name: T1559 - 4
+  description: Cobalt Strike post-exploitation pipe (4.2 and later)
+  type: bool
+
+- name: T1559 - 5
+  description: Cobalt Strike post-exploitation pipe (before 4.2)
   type: bool
 
 - name: T1204.002 - 1
@@ -2278,8 +4310,32 @@ parameters:
   description: Malicious File - Office Generic Payload Download
   type: bool
 
+- name: LNK Payload Download - 10
+  description: Malicious File - Office Generic Payload Download
+  type: bool
+
+- name: LNK Payload Download - 11
+  description: Mirror Blast Emulation
+  type: bool
+
 - name: T1106 - 1
   description: Native API - Execution through API - CreateProcess
+  type: bool
+
+- name: T1106 - 2
+  description: Native API - WinPwn - Get SYSTEM shell - Pop System Shell using CreateProcess technique
+  type: bool
+
+- name: T1106 - 3
+  description: WinPwn - Get SYSTEM shell - Bind System Shell using CreateProcess technique
+  type: bool
+
+- name: T1106 - 4
+  description: WinPwn - Get SYSTEM shell - Pop System Shell using NamedPipe Impersonation technique
+  type: bool
+
+- name: T1106 - 5
+  description: Run Shellcode via Syscall in Go
   type: bool
 
 - name: T1059.001 - 1
@@ -2358,6 +4414,35 @@ parameters:
     parameter variations with encoded arguments
   type: bool
 
+- name: T1614 - 1
+  description: Get geolocation info through IP-Lookup services using curl Windows
+  type: bool
+
+- name: T1614.001 - 1
+  description: Discover System Language by Registry Query
+  type: bool
+
+- name: T1614.001 - 2
+  description: Discover System Language with chcp
+  type: bool
+
+- name: T1614.001 - 7
+  description: Discover System Language with dism.exe
+  type: bool
+
+- name: T1614.001 - 8
+  description: Discover System Language by Windows API Query
+  type: bool
+
+- name: T1614.001 - 9
+  description: Discover System Language with WMIC
+  type: bool
+
+- name: T1614.001 - 10
+  description: Discover System Language with Powershell
+  type: bool
+
+
 - name: T1059.001 - 19
   description: PowerShell - PowerShell Command Execution
   type: bool
@@ -2371,16 +4456,44 @@ parameters:
   type: bool
 
 - name: T1569.002 - 1
-  description: Service Execution - Execute a Command as a Service
+  description: Execute a Command as a Service (Windows)
   type: bool
 
 - name: T1569.002 - 2
-  description: Service Execution - Use PsExec to execute a command on a remote 
-    host
+  description: Use PsExec to execute a command on a remote host (Windows)
   type: bool
+
+- name: T1569.002 - 4
+  description: BlackCat pre-encryption cmds with Lateral Movement (Windows)
+  type: bool
+
+- name: T1569.002 - 5
+  description: Use RemCom to execute a command on a remote host (Windows)
+  type: bool
+
+- name: T1569.002 - 6
+  description: Snake Malware Service Create (Windows)
+  type: bool
+
+- name: T1569.002 - 7
+  description: Modifying ACL of Service Control Manager via SDET (Windows)
+  type: bool
+
+- name: T1569.002 - 8
+  description: Pipe Creation - PsExec Tool Execution From Suspicious Locations (Windows)
+  type: bool
+
 
 - name: T1072 - 1
   description: Software Deployment Tools - Radmin Viewer Utility
+  type: bool
+
+- name: T1072 - 2
+  description: PDQ Deploy RAT
+  type: bool
+
+- name: T1072 - 3
+  description: Deploy 7-Zip Using Chocolatey
   type: bool
 
 - name: T1059.005 - 1
@@ -2452,6 +4565,10 @@ parameters:
   description: Automated Exfiltration - IcedID Botnet HTTP PUT
   type: bool
 
+- name: T1020 - 2
+  description: Exfiltration via Encrypted FTP
+  type: bool
+
 - name: T1048 - 3
   description: Exfiltration Over Alternative Protocol - DNSExfiltration (doh)
   type: bool
@@ -2459,6 +4576,11 @@ parameters:
 - name: T1041 - 1
   description: Exfiltration Over C2 Channel - C2 Data Exfiltration
   type: bool
+
+- name: T1041 - 2
+  description: Text Based Data Exfiltration using DNS subdomains
+  type: bool
+
 
 - name: T1048.003 - 2
   description: Exfiltration Over Unencrypted/Obfuscated Non-C2 Protocol - 
@@ -2484,6 +4606,11 @@ parameters:
   description: Distributed Component Object Model - PowerShell Lateral Movement 
     using MMC20
   type: bool
+
+- name: T1021.003 - 2
+  description: PowerShell Lateral Movement Using Excel Application Object
+  type: bool
+
 
 - name: T1563.002 - 1
   description: RDP Hijacking - RDP hijacking
@@ -2553,24 +4680,162 @@ sources:
 - query: |
     LET CommandTable = SELECT * FROM parse_csv(accessor="data", filename='''
     Flag,Command
+    T1654 - 1,Invoke-AtomicTest T1654 -TestNumbers 1
+    T1654 - 2,Invoke-AtomicTest T1654 -TestNumbers 2
+    T1652 - 1,Invoke-AtomicTest T1652 -TestNumbers 1
+    T1649 - 1,Invoke-AtomicTest T1649 -TestNumbers 1
+    T1622 - 1,Invoke-AtomicTest T1622 -TestNumbers 1
+    T1620 - 1,Invoke-AtomicTest T1620 -TestNumbers 1
+    T1615 - 1,Invoke-AtomicTest T1615 -TestNumbers 1
+    T1615 - 2,Invoke-AtomicTest T1615 -TestNumbers 2
+    T1615 - 3,Invoke-AtomicTest T1615 -TestNumbers 3
+    T1615 - 4,Invoke-AtomicTest T1615 -TestNumbers 4
+    T1615 - 5,Invoke-AtomicTest T1615 -TestNumbers 5
+    T1614 - 1,Invoke-AtomicTest T1614 -TestNumbers 1
+    T1614.001 - 1,Invoke-AtomicTest T1614.001 -TestNumbers 1
+    T1614.001 - 2,Invoke-AtomicTest T1614.001 -TestNumbers 2
+    T1614.001 - 7,Invoke-AtomicTest T1614.001 -TestNumbers 7
+    T1614.001 - 8,Invoke-AtomicTest T1614.001 -TestNumbers 8
+    T1614.001 - 9,Invoke-AtomicTest T1614.001 -TestNumbers 9
+    T1614.001 - 10,Invoke-AtomicTest T1614.001 -TestNumbers 10
+    T1592.001 - 1,Invoke-AtomicTest T1592.001 -TestNumbers 1
+    T1595.003 - 1,Invoke-AtomicTest T1595.003 -TestNumbers 1
+    T1574.008 - 1,Invoke-AtomicTest T1574.008 -TestNumbers 1
+    T1570 - 1,Invoke-AtomicTest T1570 -TestNumbers 1
+    T1570 - 2,Invoke-AtomicTest T1570 -TestNumbers 2
+    T1567.003 - 1,Invoke-AtomicTest T1567.003 -TestNumbers 1
+    T1567.002 - 1,Invoke-AtomicTest T1567.002 -TestNumbers 1
+    T1566.002 - 1,Invoke-AtomicTest T1566.002 -TestNumbers 1
+    T1564.006 - 1,Invoke-AtomicTest T1564.006 -TestNumbers 1
+    T1564.006 - 2,Invoke-AtomicTest T1564.006 -TestNumbers 2
+    T1564.006 - 3,Invoke-AtomicTest T1564.006 -TestNumbers 3    
+    T1564.002 - 3,Invoke-AtomicTest T1564.002 -TestNumbers 3
+    T1562 - 1,Invoke-AtomicTest T1562 -TestNumbers 1
+    T1562.010 - 2,Invoke-AtomicTest T1562.010 -TestNumbers 2
+    T1562.010 - 3,Invoke-AtomicTest T1562.010 -TestNumbers 3
+    T1562.009 - 1,Invoke-AtomicTest T1562.009 -TestNumbers 1
+    T1562.006 - 5,Invoke-AtomicTest T1562.006 -TestNumbers 5
+    T1562.006 - 6,Invoke-AtomicTest T1562.006 -TestNumbers 6
+    T1562.006 - 7,Invoke-AtomicTest T1562.006 -TestNumbers 7
+    T1562.006 - 8,Invoke-AtomicTest T1562.006 -TestNumbers 8
+    T1562.006 - 9,Invoke-AtomicTest T1562.006 -TestNumbers 9
+    T1562.006 - 10,Invoke-AtomicTest T1562.006 -TestNumbers 10
+    T1562.006 - 11,Invoke-AtomicTest T1562.006 -TestNumbers 11
+    T1562.006 - 12,Invoke-AtomicTest T1562.006 -TestNumbers 12
+    T1562.006 - 13,Invoke-AtomicTest T1562.006 -TestNumbers 13
+    T1562.006 - 14,Invoke-AtomicTest T1562.006 -TestNumbers 14
+    T1562.003 - 11,Invoke-AtomicTest T1562.003 -TestNumbers 11
+    T1562.003 - 12,Invoke-AtomicTest T1562.003 -TestNumbers 12
+    T1558.002 - 1,Invoke-AtomicTest T1558.002 -TestNumbers 1
+    T1557.001 - 1,Invoke-AtomicTest T1557.001 -TestNumbers 1
+    T1555.004 - 1,Invoke-AtomicTest T1555.004 -TestNumbers 1
+    T1555.004 - 2,Invoke-AtomicTest T1555.004 -TestNumbers 2
+    T1553.006 - 1,Invoke-AtomicTest T1553.006 -TestNumbers 1
+    T1553.003 - 1,Invoke-AtomicTest T1553.003 -TestNumbers 1
+    T1547.015 - 1,Invoke-AtomicTest T1547.015 -TestNumbers 1
+    T1547.014 - 1,Invoke-AtomicTest T1547.014 -TestNumbers 1
+    T1547.014 - 2,Invoke-AtomicTest T1547.014 -TestNumbers 2
+    T1547.014 - 3,Invoke-AtomicTest T1547.014 -TestNumbers 3
+    T1547.012 - 1,Invoke-AtomicTest T1547.012 -TestNumbers 1
+    T1547.008 - 1,Invoke-AtomicTest T1547.008 -TestNumbers 1
+    T1547.006 - 4,Invoke-AtomicTest T1547.006 -TestNumbers 4
+    T1547.003 - 1,Invoke-AtomicTest T1547.003 -TestNumbers 1
+    T1547.003 - 2,Invoke-AtomicTest T1547.003 -TestNumbers 2
+    T1547.002 - 1,Invoke-AtomicTest T1547.002 -TestNumbers 1
+    T1546.015 - 1,Invoke-AtomicTest T1546.015 -TestNumbers 1
+    T1546.015 - 2,Invoke-AtomicTest T1546.015 -TestNumbers 2
+    T1546.015 - 3,Invoke-AtomicTest T1546.015 -TestNumbers 3
+    T1546.015 - 4,Invoke-AtomicTest T1546.015 -TestNumbers 4
+    T1542.001 - 1,Invoke-AtomicTest T1542.001 -TestNumbers 1
+    T1539 - 1,Invoke-AtomicTest T1539 -TestNumbers 1
+    T1539 - 2,Invoke-AtomicTest T1539 -TestNumbers 2
+    T1539 - 4,Invoke-AtomicTest T1539 -TestNumbers 4
+    T1505.005 - 1,Invoke-AtomicTest T1505.005 -TestNumbers 1
+    T1505.005 - 2,Invoke-AtomicTest T1505.005 -TestNumbers 2
+    T1505.004 - 1,Invoke-AtomicTest T1505.004 -TestNumbers 1
+    T1505.004 - 2,Invoke-AtomicTest T1505.004 -TestNumbers 2
+    T1204.003 - 1,Invoke-AtomicTest T1204.003 -TestNumbers 1
+    T1137.001 - 1,Invoke-AtomicTest T1137.001 -TestNumbers 1
+    T1195 - 1,Invoke-AtomicTest T1195-TestNumbers 1
+    T1134.005 - 1,Invoke-AtomicTest T1134.005 -TestNumbers 1
+    T1129 - 1,Invoke-AtomicTest T1129 -TestNumbers 1
+    T1125 - 1,Invoke-AtomicTest T1125 -TestNumbers 1
+    T1110.004 - 4,Invoke-AtomicTest T1110.004 -TestNumbers 4
+    T1091 - 1,Invoke-AtomicTest T1091 -TestNumbers 1
+    T1090.003 - 1,Invoke-AtomicTest T1090.003 -TestNumbers 1
+    T1090.003 - 2,Invoke-AtomicTest T1090.003 -TestNumbers 2
+    T1070.008 - 1,Invoke-AtomicTest T1070.008 -TestNumbers 1
+    T1070.008 - 4,Invoke-AtomicTest T1070.008 -TestNumbers 4
+    T1059.010 - 1,Invoke-AtomicTest T1059.010 -TestNumbers 1
+    T1059.007 - 1,Invoke-AtomicTest T1059.007 -TestNumbers 1
+    T1059.007 - 2,Invoke-AtomicTest T1059.007 -TestNumbers 2
+    T1055.015 - 1,Invoke-AtomicTest T1055.015 -TestNumbers 1
+    T1055.011 - 1,Invoke-AtomicTest T1055.011 -TestNumbers 1
+    T1055.003 - 1,Invoke-AtomicTest T1055.003 -TestNumbers 1
+    T1055.002 - 1,Invoke-AtomicTest T1055.002 -TestNumbers 1
+    T1039 - 1,Invoke-AtomicTest T1039 -TestNumbers 1
+    T1039 - 2,Invoke-AtomicTest T1039 -TestNumbers 2
+    T1036.007 - 1,Invoke-AtomicTest T1036.007 -TestNumbers 1
+    T1030 - 2,Invoke-AtomicTest T1030 -TestNumbers 2
+    T1027.007 - 1,Invoke-AtomicTest T1027.007 -TestNumbers 1
+    T1027.006 - 1,Invoke-AtomicTest T1027.006 -TestNumbers 1
+    T1025 - 1,Invoke-AtomicTest T1025 -TestNumbers 1
+    T1021.004 - 1,Invoke-AtomicTest T1021.004 -TestNumbers 1
+    T1021.004 - 2,Invoke-AtomicTest T1021.004 -TestNumbers 2
+    T1016.002 - 1,Invoke-AtomicTest T1016.002 -TestNumbers 1
+    T1016.001 - 1,Invoke-AtomicTest T1016.001 -TestNumbers 1
+    T1016.001 - 3,Invoke-AtomicTest T1016.001 -TestNumbers 3
+    T1016.001 - 4,Invoke-AtomicTest T1016.001 -TestNumbers 4
+    T1016.001 - 5,Invoke-AtomicTest T1016.001 -TestNumbers 5
+    T1016.001 - 6,Invoke-AtomicTest T1016.001 -TestNumbers 6
+    T1005 - 1,Invoke-AtomicTest T1005 -TestNumbers 1
+    T1003.005 - 1,Invoke-AtomicTest T1003.005 -TestNumbers 1
     T1558.004 - 1,Invoke-AtomicTest T1558.004 -TestNumbers 1
+    T1558.004 - 2,Invoke-AtomicTest T1558.004 -TestNumbers 2
+    T1558.004 - 3,Invoke-AtomicTest T1558.004 -TestNumbers 3
     T1056.004 - 1,Invoke-AtomicTest T1056.004 -TestNumbers 1
-    T1552.001 - 3,Invoke-AtomicTest T1552.001 -TestNumbers 3
     T1552.001 - 4,Invoke-AtomicTest T1552.001 -TestNumbers 4
+    T1552.001 - 5,Invoke-AtomicTest T1552.001 -TestNumbers 5
+    T1552.001 - 7,Invoke-AtomicTest T1552.001 -TestNumbers 7
+    T1552.001 - 8,Invoke-AtomicTest T1552.001 -TestNumbers 8
+    T1552.001 - 9,Invoke-AtomicTest T1552.001 -TestNumbers 9
+    T1552.001 - 10,Invoke-AtomicTest T1552.001 -TestNumbers 10
+    T1552.001 - 11,Invoke-AtomicTest T1552.001 -TestNumbers 11
+    T1552.001 - 12,Invoke-AtomicTest T1552.001 -TestNumbers 12
+    T1552.001 - 13,Invoke-AtomicTest T1552.001 -TestNumbers 13
+    T1552.001 - 14,Invoke-AtomicTest T1552.001 -TestNumbers 14
     T1555 - 1,Invoke-AtomicTest T1555 -TestNumbers 1
     T1555 - 2,Invoke-AtomicTest T1555 -TestNumbers 2
     T1555 - 3,Invoke-AtomicTest T1555 -TestNumbers 3
     T1555 - 4,Invoke-AtomicTest T1555 -TestNumbers 4
     T1555 - 5,Invoke-AtomicTest T1555 -TestNumbers 5
+    T1555 - 6,Invoke-AtomicTest T1555 -TestNumbers 6
+    T1555 - 7,Invoke-AtomicTest T1555 -TestNumbers 7   
+    T1555 - 8,Invoke-AtomicTest T1555 -TestNumbers 8
     T1555.003 - 1,Invoke-AtomicTest T1555.003 -TestNumbers 1
     T1555.003 - 3,Invoke-AtomicTest T1555.003 -TestNumbers 3
     T1555.003 - 4,Invoke-AtomicTest T1555.003 -TestNumbers 4
+    T1555.003 - 5,Invoke-AtomicTest T1555.003 -TestNumbers 5
+    T1555.003 - 6,Invoke-AtomicTest T1555.003 -TestNumbers 6
+    T1555.003 - 7,Invoke-AtomicTest T1555.003 -TestNumbers 7
+    T1555.003 - 8,Invoke-AtomicTest T1555.003 -TestNumbers 8
+    T1555.003 - 10,Invoke-AtomicTest T1555.003 -TestNumbers 10
+    T1555.003 - 11,Invoke-AtomicTest T1555.003 -TestNumbers 11
+    T1555.003 - 12,Invoke-AtomicTest T1555.003 -TestNumbers 12
+    T1555.003 - 13,Invoke-AtomicTest T1555.003 -TestNumbers 13
+    T1555.003 - 15,Invoke-AtomicTest T1555.003 -TestNumbers 15
+    T1555.003 - 16,Invoke-AtomicTest T1555.003 -TestNumbers 16
+    T1555.003 - 17,Invoke-AtomicTest T1555.003 -TestNumbers 17
     T1552.002 - 1,Invoke-AtomicTest T1552.002 -TestNumbers 1
     T1552.002 - 2,Invoke-AtomicTest T1552.002 -TestNumbers 2
     T1003.006 - 1,Invoke-AtomicTest T1003.006 -TestNumbers 1
+    T1003.006 - 1,Invoke-AtomicTest T1003.006 -TestNumbers 2
     T1187 - 1,Invoke-AtomicTest T1187 -TestNumbers 1
+    T1187 - 2,Invoke-AtomicTest T1187 -TestNumbers 2
+    T1187 - 3,Invoke-AtomicTest T1187 -TestNumbers 3
     T1056.002 - 2,Invoke-AtomicTest T1056.002 -TestNumbers 2
     T1558.001 - 1,Invoke-AtomicTest T1558.001 -TestNumbers 1
+    T1558.001 - 2,Invoke-AtomicTest T1558.001 -TestNumbers 2
     T1552.006 - 1,Invoke-AtomicTest T1552.006 -TestNumbers 1
     T1552.006 - 2,Invoke-AtomicTest T1552.006 -TestNumbers 2
     T1558.003 - 1,Invoke-AtomicTest T1558.003 -TestNumbers 1
@@ -2578,8 +4843,11 @@ sources:
     T1558.003 - 3,Invoke-AtomicTest T1558.003 -TestNumbers 3
     T1558.003 - 4,Invoke-AtomicTest T1558.003 -TestNumbers 4
     T1558.003 - 5,Invoke-AtomicTest T1558.003 -TestNumbers 5
+    T1558.003 - 6,Invoke-AtomicTest T1558.003 -TestNumbers 6
+    T1558.003 - 7,Invoke-AtomicTest T1558.003 -TestNumbers 7
     T1056.001 - 1,Invoke-AtomicTest T1056.001 -TestNumbers 1
     T1003.004 - 1,Invoke-AtomicTest T1003.004 -TestNumbers 1
+    T1003.004 - 2,Invoke-AtomicTest T1003.004 -TestNumbers 2
     T1003.001 - 1,Invoke-AtomicTest T1003.001 -TestNumbers 1
     T1003.001 - 2,Invoke-AtomicTest T1003.001 -TestNumbers 2
     T1003.001 - 3,Invoke-AtomicTest T1003.001 -TestNumbers 3
@@ -2592,6 +4860,8 @@ sources:
     T1003.001 - 10,Invoke-AtomicTest T1003.001 -TestNumbers 10
     T1003.001 - 11,Invoke-AtomicTest T1003.001 -TestNumbers 11
     T1003.001 - 12,Invoke-AtomicTest T1003.001 -TestNumbers 12
+    T1003.001 - 13,Invoke-AtomicTest T1003.001 -TestNumbers 13
+    T1003.001 - 14,Invoke-AtomicTest T1003.001 -TestNumbers 14
     T1003.003 - 1,Invoke-AtomicTest T1003.003 -TestNumbers 1
     T1003.003 - 2,Invoke-AtomicTest T1003.003 -TestNumbers 2
     T1003.003 - 3,Invoke-AtomicTest T1003.003 -TestNumbers 3
@@ -2599,33 +4869,53 @@ sources:
     T1003.003 - 5,Invoke-AtomicTest T1003.003 -TestNumbers 5
     T1003.003 - 6,Invoke-AtomicTest T1003.003 -TestNumbers 6
     T1003.003 - 7,Invoke-AtomicTest T1003.003 -TestNumbers 7
-    T1040 - 3,Invoke-AtomicTest T1040 -TestNumbers 3
+    T1003.003 - 8,Invoke-AtomicTest T1003.003 -TestNumbers 8
+    T1003.003 - 9,Invoke-AtomicTest T1003.003 -TestNumbers 9
     T1040 - 4,Invoke-AtomicTest T1040 -TestNumbers 4
+    T1040 - 5,Invoke-AtomicTest T1040 -TestNumbers 5
+    T1040 - 6,Invoke-AtomicTest T1040 -TestNumbers 6
+    T1040 - 7,Invoke-AtomicTest T1040 -TestNumbers 7
+    T1040 - 16,Invoke-AtomicTest T1040 -TestNumbers 16
     T1003 - 1,Invoke-AtomicTest T1003 -TestNumbers 1
     T1003 - 2,Invoke-AtomicTest T1003 -TestNumbers 2
     T1003 - 3,Invoke-AtomicTest T1003 -TestNumbers 3
     T1110.002 - 1,Invoke-AtomicTest T1110.002 -TestNumbers 1
     T1556.002 - 1,Invoke-AtomicTest T1556.002 -TestNumbers 1
+    T1556.002 - 2,Invoke-AtomicTest T1556.002 -TestNumbers 2
     T1110.001 - 1,Invoke-AtomicTest T1110.001 -TestNumbers 1
     T1110.001 - 2,Invoke-AtomicTest T1110.001 -TestNumbers 2
+    T1110.001 - 4,Invoke-AtomicTest T1110.001 -TestNumbers 4
+    T1110.001 - 8,Invoke-AtomicTest T1110.001 -TestNumbers 8
     T1110.003 - 1,Invoke-AtomicTest T1110.003 -TestNumbers 1
     T1110.003 - 2,Invoke-AtomicTest T1110.003 -TestNumbers 2
     T1110.003 - 3,Invoke-AtomicTest T1110.003 -TestNumbers 3
+    T1110.003 - 5,Invoke-AtomicTest T1110.003 -TestNumbers 5
+    T1110.003 - 6,Invoke-AtomicTest T1110.003 -TestNumbers 6
+    T1110.003 - 8,Invoke-AtomicTest T1110.003 -TestNumbers 8
     T1552.004 - 1,Invoke-AtomicTest T1552.004 -TestNumbers 1
-    T1552.004 - 6,Invoke-AtomicTest T1552.004 -TestNumbers 6
-    T1552.004 - 7,Invoke-AtomicTest T1552.004 -TestNumbers 7
+    T1552.004 - 9,Invoke-AtomicTest T1552.004 -TestNumbers 9
+    T1552.004 - 10,Invoke-AtomicTest T1552.004 -TestNumbers 10
+    T1552.004 - 11,Invoke-AtomicTest T1552.004 -TestNumbers 11
+    T1552.004 - 12,Invoke-AtomicTest T1552.004 -TestNumbers 12
+    T1552.004 - 13,Invoke-AtomicTest T1552.004 -TestNumbers 13
+    T1552.004 - 14,Invoke-AtomicTest T1552.004 -TestNumbers 14
     T1003.002 - 1,Invoke-AtomicTest T1003.002 -TestNumbers 1
     T1003.002 - 2,Invoke-AtomicTest T1003.002 -TestNumbers 2
     T1003.002 - 3,Invoke-AtomicTest T1003.002 -TestNumbers 3
     T1003.002 - 4,Invoke-AtomicTest T1003.002 -TestNumbers 4
     T1003.002 - 5,Invoke-AtomicTest T1003.002 -TestNumbers 5
     T1003.002 - 6,Invoke-AtomicTest T1003.002 -TestNumbers 6
+    T1003.002 - 7,Invoke-AtomicTest T1003.002 -TestNumbers 7
+    T1003.002 - 8,Invoke-AtomicTest T1003.002 -TestNumbers 8
     T1560 - 1,Invoke-AtomicTest T1560 -TestNumbers 1
     T1560.001 - 1,Invoke-AtomicTest T1560.001 -TestNumbers 1
     T1560.001 - 2,Invoke-AtomicTest T1560.001 -TestNumbers 2
     T1560.001 - 3,Invoke-AtomicTest T1560.001 -TestNumbers 3
     T1560.001 - 4,Invoke-AtomicTest T1560.001 -TestNumbers 4
+    T1560.001 - 10,Invoke-AtomicTest T1560.001 -TestNumbers 10
+    T1560.001 - 11,Invoke-AtomicTest T1560.001 -TestNumbers 11
     T1123 - 1,Invoke-AtomicTest T1123 -TestNumbers 1
+    T1123 - 2,Invoke-AtomicTest T1123 -TestNumbers 2
     T1119 - 1,Invoke-AtomicTest T1119 -TestNumbers 1
     T1119 - 2,Invoke-AtomicTest T1119 -TestNumbers 2
     T1119 - 3,Invoke-AtomicTest T1119 -TestNumbers 3
@@ -2636,15 +4926,24 @@ sources:
     T1074.001 - 1,Invoke-AtomicTest T1074.001 -TestNumbers 1
     T1074.001 - 3,Invoke-AtomicTest T1074.001 -TestNumbers 3
     T1114.001 - 1,Invoke-AtomicTest T1114.001 -TestNumbers 1
-    T1113 - 5,Invoke-AtomicTest T1113 -TestNumbers 5
-    T1113 - 6,Invoke-AtomicTest T1113 -TestNumbers 6
+    T1113 - 7,Invoke-AtomicTest T1113 -TestNumbers 7
+    T1113 - 8,Invoke-AtomicTest T1113 -TestNumbers 8
+    T1113 - 9,Invoke-AtomicTest T1113 -TestNumbers 9   
     T1546.008 - 1,Invoke-AtomicTest T1546.008 -TestNumbers 1
     T1546.008 - 2,Invoke-AtomicTest T1546.008 -TestNumbers 2
+    T1546.008 - 3,Invoke-AtomicTest T1546.008 -TestNumbers 3
+    T1546.008 - 4,Invoke-AtomicTest T1546.008 -TestNumbers 4
+    T1546.008 - 5,Invoke-AtomicTest T1546.008 -TestNumbers 5
+    T1546.008 - 6,Invoke-AtomicTest T1546.008 -TestNumbers 6
+    T1546.008 - 7,Invoke-AtomicTest T1546.008 -TestNumbers 7     
+    T1546.008 - 8,Invoke-AtomicTest T1546.008 -TestNumbers 8                
     T1546.010 - 1,Invoke-AtomicTest T1546.010 -TestNumbers 1
     T1546.011 - 1,Invoke-AtomicTest T1546.011 -TestNumbers 1
     T1546.011 - 2,Invoke-AtomicTest T1546.011 -TestNumbers 2
     T1546.011 - 3,Invoke-AtomicTest T1546.011 -TestNumbers 3
     T1055.004 - 1,Invoke-AtomicTest T1055.004 -TestNumbers 1
+    T1055.004 - 2,Invoke-AtomicTest T1055.004 -TestNumbers 2
+    T1055.004 - 3,Invoke-AtomicTest T1055.004 -TestNumbers 3
     T1053.002 - 1,Invoke-AtomicTest T1053.002 -TestNumbers 1
     T1548.002 - 1,Invoke-AtomicTest T1548.002 -TestNumbers 1
     T1548.002 - 2,Invoke-AtomicTest T1548.002 -TestNumbers 2
@@ -2663,19 +4962,40 @@ sources:
     T1548.002 - 15,Invoke-AtomicTest T1548.002 -TestNumbers 15
     T1548.002 - 16,Invoke-AtomicTest T1548.002 -TestNumbers 16
     T1548.002 - 17,Invoke-AtomicTest T1548.002 -TestNumbers 17
+    T1548.002 - 18,Invoke-AtomicTest T1548.002 -TestNumbers 18
+    T1548.002 - 19,Invoke-AtomicTest T1548.002 -TestNumbers 19
+    T1548.002 - 20,Invoke-AtomicTest T1548.002 -TestNumbers 20
+    T1548.002 - 21,Invoke-AtomicTest T1548.002 -TestNumbers 21
+    T1548.002 - 22,Invoke-AtomicTest T1548.002 -TestNumbers 22
+    T1548.002 - 23,Invoke-AtomicTest T1548.002 -TestNumbers 23
+    T1548.002 - 24,Invoke-AtomicTest T1548.002 -TestNumbers 24
+    T1548.002 - 25,Invoke-AtomicTest T1548.002 -TestNumbers 25
+    T1548.002 - 26,Invoke-AtomicTest T1548.002 -TestNumbers 26
+    T1548.002 - 27,Invoke-AtomicTest T1548.002 -TestNumbers 27
     T1574.012 - 1,Invoke-AtomicTest T1574.012 -TestNumbers 1
     T1574.012 - 2,Invoke-AtomicTest T1574.012 -TestNumbers 2
     T1574.012 - 3,Invoke-AtomicTest T1574.012 -TestNumbers 3
     T1546.001 - 1,Invoke-AtomicTest T1546.001 -TestNumbers 1
     T1134.002 - 1,Invoke-AtomicTest T1134.002 -TestNumbers 1
+    T1134.002 - 2,Invoke-AtomicTest T1134.002 -TestNumbers 2
     T1574.001 - 1,Invoke-AtomicTest T1574.001 -TestNumbers 1
+    T1574.001 - 1,Invoke-AtomicTest T1574.001 -TestNumbers 1
+    T1574.001 - 2,Invoke-AtomicTest T1574.001 -TestNumbers 2
+    T1574.001 - 3,Invoke-AtomicTest T1574.001 -TestNumbers 3
+    T1574.001 - 4,Invoke-AtomicTest T1574.001 -TestNumbers 4
+    T1574.001 - 5,Invoke-AtomicTest T1574.001 -TestNumbers 5
+    T1574.001 - 6,Invoke-AtomicTest T1574.001 -TestNumbers 6
     T1574.002 - 1,Invoke-AtomicTest T1574.002 -TestNumbers 1
     T1078.001 - 1,Invoke-AtomicTest T1078.001 -TestNumbers 1
     T1078.001 - 2,Invoke-AtomicTest T1078.001 -TestNumbers 2
     T1055.001 - 1,Invoke-AtomicTest T1055.001 -TestNumbers 1
     T1546.012 - 1,Invoke-AtomicTest T1546.012 -TestNumbers 1
     T1546.012 - 2,Invoke-AtomicTest T1546.012 -TestNumbers 2
+    T1546.012 - 3,Invoke-AtomicTest T1546.012 -TestNumbers 3
     T1078.003 - 1,Invoke-AtomicTest T1078.003 -TestNumbers 1
+    T1078.003 - 6,Invoke-AtomicTest T1078.003 -TestNumbers 6
+    T1078.003 - 7,Invoke-AtomicTest T1078.003 -TestNumbers 7
+    T1078.003 - 13,Invoke-AtomicTest T1078.003 -TestNumbers 13
     T1037.001 - 1,Invoke-AtomicTest T1037.001 -TestNumbers 1
     T1546.007 - 1,Invoke-AtomicTest T1546.007 -TestNumbers 1
     T1134.004 - 1,Invoke-AtomicTest T1134.004 -TestNumbers 1
@@ -2688,6 +5008,8 @@ sources:
     T1546.013 - 1,Invoke-AtomicTest T1546.013 -TestNumbers 1
     T1055.012 - 1,Invoke-AtomicTest T1055.012 -TestNumbers 1
     T1055.012 - 2,Invoke-AtomicTest T1055.012 -TestNumbers 2
+    T1055.012 - 3,Invoke-AtomicTest T1055.012 -TestNumbers 3
+    T1055.012 - 4,Invoke-AtomicTest T1055.012 -TestNumbers 4
     T1055 - 1,Invoke-AtomicTest T1055 -TestNumbers 1
     T1055 - 2,Invoke-AtomicTest T1055 -TestNumbers 2
     T1547.001 - 1,Invoke-AtomicTest T1547.001 -TestNumbers 1
@@ -2697,27 +5019,57 @@ sources:
     T1547.001 - 5,Invoke-AtomicTest T1547.001 -TestNumbers 5
     T1547.001 - 6,Invoke-AtomicTest T1547.001 -TestNumbers 6
     T1547.001 - 7,Invoke-AtomicTest T1547.001 -TestNumbers 7
+    T1547.001 - 8,Invoke-AtomicTest T1547.001 -TestNumbers 8
+    T1547.001 - 9,Invoke-AtomicTest T1547.001 -TestNumbers 9
+    T1547.001 - 10,Invoke-AtomicTest T1547.001 -TestNumbers 10
+    T1547.001 - 11,Invoke-AtomicTest T1547.001 -TestNumbers 11
+    T1547.001 - 12,Invoke-AtomicTest T1547.001 -TestNumbers 12
+    T1547.001 - 13,Invoke-AtomicTest T1547.001 -TestNumbers 13
+    T1547.001 - 14,Invoke-AtomicTest T1547.001 -TestNumbers 14
+    T1547.001 - 15,Invoke-AtomicTest T1547.001 -TestNumbers 15
+    T1547.001 - 16,Invoke-AtomicTest T1547.001 -TestNumbers 16
+    T1547.001 - 17,Invoke-AtomicTest T1547.001 -TestNumbers 17
+    T1547.001 - 18,Invoke-AtomicTest T1547.001 -TestNumbers 18
+    T1547.001 - 19,Invoke-AtomicTest T1547.001 -TestNumbers 19
+    T1547.001 - 20,Invoke-AtomicTest T1547.001 -TestNumbers 20
     T1053.005 - 1,Invoke-AtomicTest T1053.005 -TestNumbers 1
     T1053.005 - 2,Invoke-AtomicTest T1053.005 -TestNumbers 2
     T1053.005 - 3,Invoke-AtomicTest T1053.005 -TestNumbers 3
     T1053.005 - 4,Invoke-AtomicTest T1053.005 -TestNumbers 4
     T1053.005 - 5,Invoke-AtomicTest T1053.005 -TestNumbers 5
     T1053.005 - 6,Invoke-AtomicTest T1053.005 -TestNumbers 6
+    T1053.005 - 7,Invoke-AtomicTest T1053.005 -TestNumbers 7
+    T1053.005 - 8,Invoke-AtomicTest T1053.005 -TestNumbers 8
+    T1053.005 - 9,Invoke-AtomicTest T1053.005 -TestNumbers 9
+    T1053.005 - 10,Invoke-AtomicTest T1053.005 -TestNumbers 10
+    T1053.005 - 11,Invoke-AtomicTest T1053.005 -TestNumbers 11
+    T1053.005 - 12,Invoke-AtomicTest T1053.005 -TestNumbers 12
     T1546.002 - 1,Invoke-AtomicTest T1546.002 -TestNumbers 1
     T1547.005 - 1,Invoke-AtomicTest T1547.005 -TestNumbers 1
+    T1547.005 - 2,Invoke-AtomicTest T1547.005 -TestNumbers 2
     T1574.011 - 1,Invoke-AtomicTest T1574.011 -TestNumbers 1
     T1574.011 - 2,Invoke-AtomicTest T1574.011 -TestNumbers 2
     T1547.009 - 1,Invoke-AtomicTest T1547.009 -TestNumbers 1
     T1547.009 - 2,Invoke-AtomicTest T1547.009 -TestNumbers 2
     T1134.001 - 1,Invoke-AtomicTest T1134.001 -TestNumbers 1
     T1134.001 - 2,Invoke-AtomicTest T1134.001 -TestNumbers 2
+    T1134.001 - 3,Invoke-AtomicTest T1134.001 -TestNumbers 3
+    T1134.001 - 4,Invoke-AtomicTest T1134.001 -TestNumbers 4
+    T1134.001 - 5,Invoke-AtomicTest T1134.001 -TestNumbers 5
     T1546.003 - 1,Invoke-AtomicTest T1546.003 -TestNumbers 1
+    T1546.003 - 2,Invoke-AtomicTest T1546.003 -TestNumbers 2
+    T1546.003 - 3,Invoke-AtomicTest T1546.003 -TestNumbers 3
     T1543.003 - 1,Invoke-AtomicTest T1543.003 -TestNumbers 1
     T1543.003 - 2,Invoke-AtomicTest T1543.003 -TestNumbers 2
     T1543.003 - 3,Invoke-AtomicTest T1543.003 -TestNumbers 3
+    T1543.003 - 4,Invoke-AtomicTest T1543.003 -TestNumbers 4
+    T1543.003 - 5,Invoke-AtomicTest T1543.003 -TestNumbers 5
+    T1543.003 - 6,Invoke-AtomicTest T1543.003 -TestNumbers 6
     T1547.004 - 1,Invoke-AtomicTest T1547.004 -TestNumbers 1
     T1547.004 - 2,Invoke-AtomicTest T1547.004 -TestNumbers 2
     T1547.004 - 3,Invoke-AtomicTest T1547.004 -TestNumbers 3
+    T1547.004 - 4,Invoke-AtomicTest T1547.004 -TestNumbers 4
+    T1547.004 - 5,Invoke-AtomicTest T1547.004 -TestNumbers 5
     T1197 - 1,Invoke-AtomicTest T1197 -TestNumbers 1
     T1197 - 2,Invoke-AtomicTest T1197 -TestNumbers 2
     T1197 - 3,Invoke-AtomicTest T1197 -TestNumbers 3
@@ -2747,12 +5099,22 @@ sources:
     T1562.002 - 3,Invoke-AtomicTest T1562.002 -TestNumbers 3
     T1562.002 - 4,Invoke-AtomicTest T1562.002 -TestNumbers 4
     T1562.002 - 5,Invoke-AtomicTest T1562.002 -TestNumbers 5
+    T1562.002 - 6,Invoke-AtomicTest T1562.002 -TestNumbers 6
+    T1562.002 - 7,Invoke-AtomicTest T1562.002 -TestNumbers 7
+    T1562.002 - 8,Invoke-AtomicTest T1562.002 -TestNumbers 8
+    T1562.002 - 9,Invoke-AtomicTest T1562.002 -TestNumbers 9
+    T1562.002 - 10,Invoke-AtomicTest T1562.002 -TestNumbers 10
     T1562.004 - 1,Invoke-AtomicTest T1562.004 -TestNumbers 1
     T1562.004 - 2,Invoke-AtomicTest T1562.004 -TestNumbers 2
     T1562.004 - 3,Invoke-AtomicTest T1562.004 -TestNumbers 3
     T1562.004 - 4,Invoke-AtomicTest T1562.004 -TestNumbers 4
     T1562.004 - 5,Invoke-AtomicTest T1562.004 -TestNumbers 5
     T1562.004 - 6,Invoke-AtomicTest T1562.004 -TestNumbers 6
+    T1562.004 - 20,Invoke-AtomicTest T1562.004 -TestNumbers 20
+    T1562.004 - 21,Invoke-AtomicTest T1562.004 -TestNumbers 21
+    T1562.004 - 22,Invoke-AtomicTest T1562.004 -TestNumbers 22
+    T1562.004 - 23,Invoke-AtomicTest T1562.004 -TestNumbers 23
+    T1562.004 - 24,Invoke-AtomicTest T1562.004 -TestNumbers 24
     T1562.001 - 10,Invoke-AtomicTest T1562.001 -TestNumbers 10
     T1562.001 - 11,Invoke-AtomicTest T1562.001 -TestNumbers 11
     T1562.001 - 12,Invoke-AtomicTest T1562.001 -TestNumbers 12
@@ -2768,6 +5130,39 @@ sources:
     T1562.001 - 22,Invoke-AtomicTest T1562.001 -TestNumbers 22
     T1562.001 - 23,Invoke-AtomicTest T1562.001 -TestNumbers 23
     T1562.001 - 24,Invoke-AtomicTest T1562.001 -TestNumbers 24
+    T1562.001 - 25,Invoke-AtomicTest T1562.001 -TestNumbers 25
+    T1562.001 - 26,Invoke-AtomicTest T1562.001 -TestNumbers 26
+    T1562.001 - 27,Invoke-AtomicTest T1562.001 -TestNumbers 27
+    T1562.001 - 28,Invoke-AtomicTest T1562.001 -TestNumbers 28
+    T1562.001 - 29,Invoke-AtomicTest T1562.001 -TestNumbers 29
+    T1562.001 - 30,Invoke-AtomicTest T1562.001 -TestNumbers 30
+    T1562.001 - 31,Invoke-AtomicTest T1562.001 -TestNumbers 31
+    T1562.001 - 32,Invoke-AtomicTest T1562.001 -TestNumbers 32
+    T1562.001 - 33,Invoke-AtomicTest T1562.001 -TestNumbers 33
+    T1562.001 - 34,Invoke-AtomicTest T1562.001 -TestNumbers 34
+    T1562.001 - 35,Invoke-AtomicTest T1562.001 -TestNumbers 35
+    T1562.001 - 36,Invoke-AtomicTest T1562.001 -TestNumbers 36
+    T1562.001 - 37,Invoke-AtomicTest T1562.001 -TestNumbers 37
+    T1562.001 - 38,Invoke-AtomicTest T1562.001 -TestNumbers 38
+    T1562.001 - 39,Invoke-AtomicTest T1562.001 -TestNumbers 39
+    T1562.001 - 40,Invoke-AtomicTest T1562.001 -TestNumbers 40
+    T1562.001 - 41,Invoke-AtomicTest T1562.001 -TestNumbers 41
+    T1562.001 - 42,Invoke-AtomicTest T1562.001 -TestNumbers 42
+    T1562.001 - 43,Invoke-AtomicTest T1562.001 -TestNumbers 43
+    T1562.001 - 44,Invoke-AtomicTest T1562.001 -TestNumbers 44
+    T1562.001 - 45,Invoke-AtomicTest T1562.001 -TestNumbers 45
+    T1562.001 - 46,Invoke-AtomicTest T1562.001 -TestNumbers 46
+    T1562.001 - 47,Invoke-AtomicTest T1562.001 -TestNumbers 47
+    T1562.001 - 48,Invoke-AtomicTest T1562.001 -TestNumbers 48
+    T1562.001 - 49,Invoke-AtomicTest T1562.001 -TestNumbers 49
+    T1562.001 - 50,Invoke-AtomicTest T1562.001 -TestNumbers 50
+    T1562.001 - 51,Invoke-AtomicTest T1562.001 -TestNumbers 51
+    T1562.001 - 52,Invoke-AtomicTest T1562.001 -TestNumbers 52
+    T1562.001 - 53,Invoke-AtomicTest T1562.001 -TestNumbers 53
+    T1562.001 - 54,Invoke-AtomicTest T1562.001 -TestNumbers 54
+    T1562.001 - 55,Invoke-AtomicTest T1562.001 -TestNumbers 55
+    T1562.001 - 56,Invoke-AtomicTest T1562.001 -TestNumbers 56
+    T1562.001 - 57,Invoke-AtomicTest T1562.001 -TestNumbers 57
     T1070.004 - 4,Invoke-AtomicTest T1070.004 -TestNumbers 4
     T1070.004 - 5,Invoke-AtomicTest T1070.004 -TestNumbers 5
     T1070.004 - 6,Invoke-AtomicTest T1070.004 -TestNumbers 6
@@ -2776,16 +5171,26 @@ sources:
     T1070.004 - 10,Invoke-AtomicTest T1070.004 -TestNumbers 10
     T1564.001 - 3,Invoke-AtomicTest T1564.001 -TestNumbers 3
     T1564.001 - 4,Invoke-AtomicTest T1564.001 -TestNumbers 4
+    T1564.001 - 8,Invoke-AtomicTest T1564.001 -TestNumbers 8
+    T1564.001 - 9,Invoke-AtomicTest T1564.001 -TestNumbers 9
+    T1564.001 - 10,Invoke-AtomicTest T1564.001 -TestNumbers 10
     T1564.003 - 1,Invoke-AtomicTest T1564.003 -TestNumbers 1
+    T1564.003 - 2,Invoke-AtomicTest T1564.003 -TestNumbers 2
+    T1564.003 - 3,Invoke-AtomicTest T1564.003 -TestNumbers 3
     T1564 - 1,Invoke-AtomicTest T1564 -TestNumbers 1
     T1564 - 2,Invoke-AtomicTest T1564 -TestNumbers 2
     T1564 - 3,Invoke-AtomicTest T1564 -TestNumbers 3
+    T1564 - 4,Invoke-AtomicTest T1564 -TestNumbers 4
+    T1564 - 5,Invoke-AtomicTest T1564 -TestNumbers 5
     T1070 - 1,Invoke-AtomicTest T1070 -TestNumbers 1
     T1202 - 1,Invoke-AtomicTest T1202 -TestNumbers 1
     T1202 - 2,Invoke-AtomicTest T1202 -TestNumbers 2
     T1202 - 3,Invoke-AtomicTest T1202 -TestNumbers 3
-    T1553.004 - 4,Invoke-AtomicTest T1553.004 -TestNumbers 4
+    T1202 - 4,Invoke-AtomicTest T1202 -TestNumbers 4
+    T1202 - 5,Invoke-AtomicTest T1202 -TestNumbers 5
     T1553.004 - 5,Invoke-AtomicTest T1553.004 -TestNumbers 5
+    T1553.004 - 6,Invoke-AtomicTest T1553.004 -TestNumbers 6
+    T1553.004 - 7,Invoke-AtomicTest T1553.004 -TestNumbers 7
     T1218.004 - 1,Invoke-AtomicTest T1218.004 -TestNumbers 1
     T1218.004 - 2,Invoke-AtomicTest T1218.004 -TestNumbers 2
     T1218.004 - 3,Invoke-AtomicTest T1218.004 -TestNumbers 3
@@ -2799,6 +5204,7 @@ sources:
     T1553.005 - 1,Invoke-AtomicTest T1553.005 -TestNumbers 1
     T1553.005 - 2,Invoke-AtomicTest T1553.005 -TestNumbers 2
     T1553.005 - 3,Invoke-AtomicTest T1553.005 -TestNumbers 3
+    T1553.005 - 4,Invoke-AtomicTest T1553.005 -TestNumbers 4
     T1036.004 - 1,Invoke-AtomicTest T1036.004 -TestNumbers 1
     T1036.004 - 2,Invoke-AtomicTest T1036.004 -TestNumbers 2
     T1036 - 1,Invoke-AtomicTest T1036 -TestNumbers 1
@@ -2808,6 +5214,90 @@ sources:
     T1112 - 4,Invoke-AtomicTest T1112 -TestNumbers 4
     T1112 - 5,Invoke-AtomicTest T1112 -TestNumbers 5
     T1112 - 6,Invoke-AtomicTest T1112 -TestNumbers 6
+    T1112 - 7,Invoke-AtomicTest T1112 -TestNumbers 7
+    T1112 - 8,Invoke-AtomicTest T1112 -TestNumbers 8
+    T1112 - 9,Invoke-AtomicTest T1112 -TestNumbers 9
+    T1112 - 10,Invoke-AtomicTest T1112 -TestNumbers 10
+    T1112 - 11,Invoke-AtomicTest T1112 -TestNumbers 11
+    T1112 - 12,Invoke-AtomicTest T1112 -TestNumbers 12
+    T1112 - 13,Invoke-AtomicTest T1112 -TestNumbers 13
+    T1112 - 14,Invoke-AtomicTest T1112 -TestNumbers 14
+    T1112 - 15,Invoke-AtomicTest T1112 -TestNumbers 15
+    T1112 - 16,Invoke-AtomicTest T1112 -TestNumbers 16
+    T1112 - 17,Invoke-AtomicTest T1112 -TestNumbers 17
+    T1112 - 18,Invoke-AtomicTest T1112 -TestNumbers 18
+    T1112 - 19,Invoke-AtomicTest T1112 -TestNumbers 19
+    T1112 - 20,Invoke-AtomicTest T1112 -TestNumbers 20
+    T1112 - 21,Invoke-AtomicTest T1112 -TestNumbers 21
+    T1112 - 22,Invoke-AtomicTest T1112 -TestNumbers 22
+    T1112 - 23,Invoke-AtomicTest T1112 -TestNumbers 23
+    T1112 - 24,Invoke-AtomicTest T1112 -TestNumbers 24
+    T1112 - 25,Invoke-AtomicTest T1112 -TestNumbers 25
+    T1112 - 26,Invoke-AtomicTest T1112 -TestNumbers 26
+    T1112 - 27,Invoke-AtomicTest T1112 -TestNumbers 27
+    T1112 - 28,Invoke-AtomicTest T1112 -TestNumbers 28
+    T1112 - 29,Invoke-AtomicTest T1112 -TestNumbers 29
+    T1112 - 30,Invoke-AtomicTest T1112 -TestNumbers 30
+    T1112 - 31,Invoke-AtomicTest T1112 -TestNumbers 31
+    T1112 - 32,Invoke-AtomicTest T1112 -TestNumbers 32
+    T1112 - 33,Invoke-AtomicTest T1112 -TestNumbers 33
+    T1112 - 34,Invoke-AtomicTest T1112 -TestNumbers 34
+    T1112 - 35,Invoke-AtomicTest T1112 -TestNumbers 35
+    T1112 - 36,Invoke-AtomicTest T1112 -TestNumbers 36
+    T1112 - 37,Invoke-AtomicTest T1112 -TestNumbers 37
+    T1112 - 38,Invoke-AtomicTest T1112 -TestNumbers 38
+    T1112 - 39,Invoke-AtomicTest T1112 -TestNumbers 39
+    T1112 - 40,Invoke-AtomicTest T1112 -TestNumbers 40
+    T1112 - 41,Invoke-AtomicTest T1112 -TestNumbers 41
+    T1112 - 42,Invoke-AtomicTest T1112 -TestNumbers 42
+    T1112 - 43,Invoke-AtomicTest T1112 -TestNumbers 43
+    T1112 - 44,Invoke-AtomicTest T1112 -TestNumbers 44
+    T1112 - 45,Invoke-AtomicTest T1112 -TestNumbers 45
+    T1112 - 46,Invoke-AtomicTest T1112 -TestNumbers 46
+    T1112 - 47,Invoke-AtomicTest T1112 -TestNumbers 47
+    T1112 - 48,Invoke-AtomicTest T1112 -TestNumbers 48
+    T1112 - 49,Invoke-AtomicTest T1112 -TestNumbers 49
+    T1112 - 50,Invoke-AtomicTest T1112 -TestNumbers 50
+    T1112 - 51,Invoke-AtomicTest T1112 -TestNumbers 51
+    T1112 - 52,Invoke-AtomicTest T1112 -TestNumbers 52
+    T1112 - 53,Invoke-AtomicTest T1112 -TestNumbers 53
+    T1112 - 54,Invoke-AtomicTest T1112 -TestNumbers 54
+    T1112 - 55,Invoke-AtomicTest T1112 -TestNumbers 55
+    T1112 - 56,Invoke-AtomicTest T1112 -TestNumbers 56
+    T1112 - 57,Invoke-AtomicTest T1112 -TestNumbers 57
+    T1112 - 58,Invoke-AtomicTest T1112 -TestNumbers 58
+    T1112 - 59,Invoke-AtomicTest T1112 -TestNumbers 59
+    T1112 - 60,Invoke-AtomicTest T1112 -TestNumbers 60
+    T1112 - 61,Invoke-AtomicTest T1112 -TestNumbers 61
+    T1112 - 62,Invoke-AtomicTest T1112 -TestNumbers 62
+    T1112 - 63,Invoke-AtomicTest T1112 -TestNumbers 63
+    T1112 - 64,Invoke-AtomicTest T1112 -TestNumbers 64
+    T1112 - 65,Invoke-AtomicTest T1112 -TestNumbers 65
+    T1112 - 66,Invoke-AtomicTest T1112 -TestNumbers 66
+    T1112 - 67,Invoke-AtomicTest T1112 -TestNumbers 67
+    T1112 - 68,Invoke-AtomicTest T1112 -TestNumbers 68
+    T1112 - 69,Invoke-AtomicTest T1112 -TestNumbers 69
+    T1112 - 70,Invoke-AtomicTest T1112 -TestNumbers 70
+    T1112 - 71,Invoke-AtomicTest T1112 -TestNumbers 71
+    T1112 - 72,Invoke-AtomicTest T1112 -TestNumbers 72
+    T1112 - 73,Invoke-AtomicTest T1112 -TestNumbers 73
+    T1112 - 74,Invoke-AtomicTest T1112 -TestNumbers 74
+    T1112 - 75,Invoke-AtomicTest T1112 -TestNumbers 75
+    T1112 - 76,Invoke-AtomicTest T1112 -TestNumbers 76
+    T1112 - 77,Invoke-AtomicTest T1112 -TestNumbers 77
+    T1112 - 78,Invoke-AtomicTest T1112 -TestNumbers 78
+    T1112 - 79,Invoke-AtomicTest T1112 -TestNumbers 79
+    T1112 - 80,Invoke-AtomicTest T1112 -TestNumbers 80
+    T1112 - 81,Invoke-AtomicTest T1112 -TestNumbers 81
+    T1112 - 82,Invoke-AtomicTest T1112 -TestNumbers 82
+    T1112 - 83,Invoke-AtomicTest T1112 -TestNumbers 83
+    T1112 - 84,Invoke-AtomicTest T1112 -TestNumbers 84
+    T1112 - 85,Invoke-AtomicTest T1112 -TestNumbers 85
+    T1112 - 86,Invoke-AtomicTest T1112 -TestNumbers 86
+    T1112 - 87,Invoke-AtomicTest T1112 -TestNumbers 87
+    T1112 - 88,Invoke-AtomicTest T1112 -TestNumbers 88
+    T1112 - 89,Invoke-AtomicTest T1112 -TestNumbers 89
+    T1112 - 90,Invoke-AtomicTest T1112 -TestNumbers 90
     T1218.005 - 1,Invoke-AtomicTest T1218.005 -TestNumbers 1
     T1218.005 - 2,Invoke-AtomicTest T1218.005 -TestNumbers 2
     T1218.005 - 3,Invoke-AtomicTest T1218.005 -TestNumbers 3
@@ -2821,13 +5311,24 @@ sources:
     T1218.007 - 1,Invoke-AtomicTest T1218.007 -TestNumbers 1
     T1218.007 - 2,Invoke-AtomicTest T1218.007 -TestNumbers 2
     T1218.007 - 3,Invoke-AtomicTest T1218.007 -TestNumbers 3
+    T1218.007 - 4,Invoke-AtomicTest T1218.007 -TestNumbers 4
+    T1218.007 - 5,Invoke-AtomicTest T1218.007 -TestNumbers 5
+    T1218.007 - 6,Invoke-AtomicTest T1218.007 -TestNumbers 6
+    T1218.007 - 7,Invoke-AtomicTest T1218.007 -TestNumbers 7
+    T1218.007 - 8,Invoke-AtomicTest T1218.007 -TestNumbers 8
+    T1218.007 - 9,Invoke-AtomicTest T1218.007 -TestNumbers 9
+    T1218.007 - 10,Invoke-AtomicTest T1218.007 -TestNumbers 10
+    T1218.007 - 11,Invoke-AtomicTest T1218.007 -TestNumbers 11
     T1564.004 - 1,Invoke-AtomicTest T1564.004 -TestNumbers 1
     T1564.004 - 2,Invoke-AtomicTest T1564.004 -TestNumbers 2
     T1564.004 - 3,Invoke-AtomicTest T1564.004 -TestNumbers 3
     T1564.004 - 4,Invoke-AtomicTest T1564.004 -TestNumbers 4
+    T1564.004 - 5,Invoke-AtomicTest T1564.004 -TestNumbers 5
     T1070.005 - 1,Invoke-AtomicTest T1070.005 -TestNumbers 1
     T1070.005 - 2,Invoke-AtomicTest T1070.005 -TestNumbers 2
     T1070.005 - 3,Invoke-AtomicTest T1070.005 -TestNumbers 3
+    T1070.005 - 4,Invoke-AtomicTest T1070.005 -TestNumbers 4
+    T1070.005 - 5,Invoke-AtomicTest T1070.005 -TestNumbers 5
     T1027 - 2,Invoke-AtomicTest T1027 -TestNumbers 2
     T1027 - 3,Invoke-AtomicTest T1027 -TestNumbers 3
     T1027 - 4,Invoke-AtomicTest T1027 -TestNumbers 4
@@ -2836,9 +5337,12 @@ sources:
     T1027 - 7,Invoke-AtomicTest T1027 -TestNumbers 7
     T1027 - 8,Invoke-AtomicTest T1027 -TestNumbers 8
     T1218.008 - 1,Invoke-AtomicTest T1218.008 -TestNumbers 1
+    T1218.008 - 2,Invoke-AtomicTest T1218.008 -TestNumbers 2
     T1550.002 - 1,Invoke-AtomicTest T1550.002 -TestNumbers 1
     T1550.002 - 2,Invoke-AtomicTest T1550.002 -TestNumbers 2
+    T1550.002 - 3,Invoke-AtomicTest T1550.002 -TestNumbers 3
     T1550.003 - 1,Invoke-AtomicTest T1550.003 -TestNumbers 1
+    T1550.003 - 2,Invoke-AtomicTest T1550.003 -TestNumbers 2
     T1216.001 - 1,Invoke-AtomicTest T1216.001 -TestNumbers 1
     T1218.009 - 1,Invoke-AtomicTest T1218.009 -TestNumbers 1
     T1218.009 - 2,Invoke-AtomicTest T1218.009 -TestNumbers 2
@@ -2865,6 +5369,13 @@ sources:
     T1218.011 - 6,Invoke-AtomicTest T1218.011 -TestNumbers 6
     T1218.011 - 7,Invoke-AtomicTest T1218.011 -TestNumbers 7
     T1218.011 - 8,Invoke-AtomicTest T1218.011 -TestNumbers 8
+    T1218.011 - 10,Invoke-AtomicTest T1218.011 -TestNumbers 10
+    T1218.011 - 11,Invoke-AtomicTest T1218.011 -TestNumbers 11
+    T1218.011 - 12,Invoke-AtomicTest T1218.011 -TestNumbers 12
+    T1218.011 - 13,Invoke-AtomicTest T1218.011 -TestNumbers 13
+    T1218.011 - 14,Invoke-AtomicTest T1218.011 -TestNumbers 14
+    T1218.011 - 15,Invoke-AtomicTest T1218.011 -TestNumbers 15    
+    T1218.011 - 16,Invoke-AtomicTest T1218.011 -TestNumbers 16
     T1218 - 1,Invoke-AtomicTest T1218 -TestNumbers 1
     T1218 - 2,Invoke-AtomicTest T1218 -TestNumbers 2
     T1218 - 3,Invoke-AtomicTest T1218 -TestNumbers 3
@@ -2875,7 +5386,8 @@ sources:
     T1218 - 8,Invoke-AtomicTest T1218 -TestNumbers 8
     T1216 - 1,Invoke-AtomicTest T1216 -TestNumbers 1
     T1216 - 2,Invoke-AtomicTest T1216 -TestNumbers 2
-    T1497.001 - 2,Invoke-AtomicTest T1497.001 -TestNumbers 2
+    T1497.001 - 3,Invoke-AtomicTest T1497.001 -TestNumbers 3
+    T1497.001 - 5,Invoke-AtomicTest T1497.001 -TestNumbers 5
     T1221 - 1,Invoke-AtomicTest T1221 -TestNumbers 1
     T1070.006 - 5,Invoke-AtomicTest T1070.006 -TestNumbers 5
     T1070.006 - 6,Invoke-AtomicTest T1070.006 -TestNumbers 6
@@ -2886,24 +5398,39 @@ sources:
     T1222.001 - 3,Invoke-AtomicTest T1222.001 -TestNumbers 3
     T1222.001 - 4,Invoke-AtomicTest T1222.001 -TestNumbers 4
     T1222.001 - 5,Invoke-AtomicTest T1222.001 -TestNumbers 5
+    T1222.001 - 6,Invoke-AtomicTest T1222.001 -TestNumbers 6
     T1220 - 1,Invoke-AtomicTest T1220 -TestNumbers 1
     T1220 - 2,Invoke-AtomicTest T1220 -TestNumbers 2
     T1220 - 3,Invoke-AtomicTest T1220 -TestNumbers 3
     T1220 - 4,Invoke-AtomicTest T1220 -TestNumbers 4
     T1098 - 1,Invoke-AtomicTest T1098 -TestNumbers 1
     T1098 - 2,Invoke-AtomicTest T1098 -TestNumbers 2
+    T1098 - 9,Invoke-AtomicTest T1098 -TestNumbers 9
+    T1098 - 10,Invoke-AtomicTest T1098 -TestNumbers 10
+    T1098 - 11,Invoke-AtomicTest T1098 -TestNumbers 11
+    T1098 - 12,Invoke-AtomicTest T1098 -TestNumbers 12
+    T1098 - 13,Invoke-AtomicTest T1098 -TestNumbers 13
+    T1098 - 14,Invoke-AtomicTest T1098 -TestNumbers 14
+    T1098 - 15,Invoke-AtomicTest T1098 -TestNumbers 15
+    T1098 - 16,Invoke-AtomicTest T1098 -TestNumbers 16
     T1137.006 - 1,Invoke-AtomicTest T1137.006 -TestNumbers 1
+    T1137.006 - 2,Invoke-AtomicTest T1137.006 -TestNumbers 2
+    T1137.006 - 3,Invoke-AtomicTest T1137.006 -TestNumbers 3
+    T1137.006 - 4,Invoke-AtomicTest T1137.006 -TestNumbers 4
+    T1137.006 - 5,Invoke-AtomicTest T1137.006 -TestNumbers 5
     T1176 - 1,Invoke-AtomicTest T1176 -TestNumbers 1
     T1176 - 2,Invoke-AtomicTest T1176 -TestNumbers 2
     T1176 - 3,Invoke-AtomicTest T1176 -TestNumbers 3
     T1176 - 4,Invoke-AtomicTest T1176 -TestNumbers 4
+    T1176 - 5,Invoke-AtomicTest T1176 -TestNumbers 5
     T1136.002 - 1,Invoke-AtomicTest T1136.002 -TestNumbers 1
     T1136.002 - 2,Invoke-AtomicTest T1136.002 -TestNumbers 2
     T1136.002 - 3,Invoke-AtomicTest T1136.002 -TestNumbers 3
     T1133 - 1,Invoke-AtomicTest T1133 -TestNumbers 1
-    T1136.001 - 3,Invoke-AtomicTest T1136.001 -TestNumbers 3
     T1136.001 - 4,Invoke-AtomicTest T1136.001 -TestNumbers 4
-    T1136.001 - 6,Invoke-AtomicTest T1136.001 -TestNumbers 6
+    T1136.001 - 5,Invoke-AtomicTest T1136.001 -TestNumbers 5
+    T1136.001 - 8,Invoke-AtomicTest T1136.001 -TestNumbers 8
+    T1136.001 - 9,Invoke-AtomicTest T1136.001 -TestNumbers 9
     T1137 - 1,Invoke-AtomicTest T1137 -TestNumbers 1
     T1137.002 - 1,Invoke-AtomicTest T1137.002 -TestNumbers 1
     T1137.004 - 1,Invoke-AtomicTest T1137.004 -TestNumbers 1
@@ -2913,7 +5440,12 @@ sources:
     T1531 - 2,Invoke-AtomicTest T1531 -TestNumbers 2
     T1531 - 3,Invoke-AtomicTest T1531 -TestNumbers 3
     T1485 - 1,Invoke-AtomicTest T1485 -TestNumbers 1
+    T1485 - 3,Invoke-AtomicTest T1485 -TestNumbers 3
+    T1485 - 5,Invoke-AtomicTest T1485 -TestNumbers 5
     T1486 - 5,Invoke-AtomicTest T1486 -TestNumbers 5
+    T1486 - 8,Invoke-AtomicTest T1486 -TestNumbers 8
+    T1486 - 9,Invoke-AtomicTest T1486 -TestNumbers 9
+    T1486 - 10,Invoke-AtomicTest T1486 -TestNumbers 10
     T1490 - 1,Invoke-AtomicTest T1490 -TestNumbers 1
     T1490 - 2,Invoke-AtomicTest T1490 -TestNumbers 2
     T1490 - 3,Invoke-AtomicTest T1490 -TestNumbers 3
@@ -2922,17 +5454,28 @@ sources:
     T1490 - 6,Invoke-AtomicTest T1490 -TestNumbers 6
     T1490 - 7,Invoke-AtomicTest T1490 -TestNumbers 7
     T1490 - 8,Invoke-AtomicTest T1490 -TestNumbers 8
+    T1490 - 9,Invoke-AtomicTest T1490 -TestNumbers 9
+    T1490 - 10,Invoke-AtomicTest T1490 -TestNumbers 10
+    T1490 - 11,Invoke-AtomicTest T1490 -TestNumbers 11
     T1491.001 - 1,Invoke-AtomicTest T1491.001 -TestNumbers 1
+    T1491.001 - 2,Invoke-AtomicTest T1491.001 -TestNumbers 2
+    T1491.001 - 3,Invoke-AtomicTest T1491.001 -TestNumbers 3
     T1489 - 1,Invoke-AtomicTest T1489 -TestNumbers 1
     T1489 - 2,Invoke-AtomicTest T1489 -TestNumbers 2
     T1489 - 3,Invoke-AtomicTest T1489 -TestNumbers 3
     T1529 - 1,Invoke-AtomicTest T1529 -TestNumbers 1
     T1529 - 2,Invoke-AtomicTest T1529 -TestNumbers 2
+    T1529 - 12,Invoke-AtomicTest T1529 -TestNumbers 12
+    T1529 - 13,Invoke-AtomicTest T1529 -TestNumbers 13
+    T1529 - 14,Invoke-AtomicTest T1529 -TestNumbers 14
+    T1529 - 15,Invoke-AtomicTest T1529 -TestNumbers 15
     T1010 - 1,Invoke-AtomicTest T1010 -TestNumbers 1
-    T1217 - 4,Invoke-AtomicTest T1217 -TestNumbers 4
     T1217 - 5,Invoke-AtomicTest T1217 -TestNumbers 5
     T1217 - 6,Invoke-AtomicTest T1217 -TestNumbers 6
     T1217 - 7,Invoke-AtomicTest T1217 -TestNumbers 7
+    T1217 - 8,Invoke-AtomicTest T1217 -TestNumbers 8
+    T1217 - 10,Invoke-AtomicTest T1217 -TestNumbers 10
+    T1217 - 11,Invoke-AtomicTest T1217 -TestNumbers 11
     T1087.002 - 1,Invoke-AtomicTest T1087.002 -TestNumbers 1
     T1087.002 - 2,Invoke-AtomicTest T1087.002 -TestNumbers 2
     T1087.002 - 3,Invoke-AtomicTest T1087.002 -TestNumbers 3
@@ -2943,6 +5486,18 @@ sources:
     T1087.002 - 8,Invoke-AtomicTest T1087.002 -TestNumbers 8
     T1087.002 - 9,Invoke-AtomicTest T1087.002 -TestNumbers 9
     T1087.002 - 10,Invoke-AtomicTest T1087.002 -TestNumbers 10
+    T1087.002 - 11,Invoke-AtomicTest T1087.002 -TestNumbers 11
+    T1087.002 - 12,Invoke-AtomicTest T1087.002 -TestNumbers 12
+    T1087.002 - 13,Invoke-AtomicTest T1087.002 -TestNumbers 13
+    T1087.002 - 14,Invoke-AtomicTest T1087.002 -TestNumbers 14
+    T1087.002 - 15,Invoke-AtomicTest T1087.002 -TestNumbers 15
+    T1087.002 - 16,Invoke-AtomicTest T1087.002 -TestNumbers 16
+    T1087.002 - 17,Invoke-AtomicTest T1087.002 -TestNumbers 17
+    T1087.002 - 18,Invoke-AtomicTest T1087.002 -TestNumbers 18
+    T1087.002 - 22,Invoke-AtomicTest T1087.002 -TestNumbers 19
+    T1087.002 - 20,Invoke-AtomicTest T1087.002 -TestNumbers 20
+    T1087.002 - 21,Invoke-AtomicTest T1087.002 -TestNumbers 21
+    T1087.002 - 22,Invoke-AtomicTest T1087.002 -TestNumbers 22
     T1069.002 - 1,Invoke-AtomicTest T1069.002 -TestNumbers 1
     T1069.002 - 2,Invoke-AtomicTest T1069.002 -TestNumbers 2
     T1069.002 - 3,Invoke-AtomicTest T1069.002 -TestNumbers 3
@@ -2960,6 +5515,9 @@ sources:
     T1482 - 7,Invoke-AtomicTest T1482 -TestNumbers 7
     T1083 - 1,Invoke-AtomicTest T1083 -TestNumbers 1
     T1083 - 2,Invoke-AtomicTest T1083 -TestNumbers 2
+    T1083 - 5,Invoke-AtomicTest T1083 -TestNumbers 5
+    T1083 - 6,Invoke-AtomicTest T1083 -TestNumbers 6
+    T1083 - 7,Invoke-AtomicTest T1083 -TestNumbers 7
     T1087.001 - 8,Invoke-AtomicTest T1087.001 -TestNumbers 8
     T1087.001 - 9,Invoke-AtomicTest T1087.001 -TestNumbers 9
     T1087.001 - 10,Invoke-AtomicTest T1087.001 -TestNumbers 10
@@ -2970,15 +5528,41 @@ sources:
     T1069.001 - 6,Invoke-AtomicTest T1069.001 -TestNumbers 6
     T1046 - 3,Invoke-AtomicTest T1046 -TestNumbers 3
     T1046 - 4,Invoke-AtomicTest T1046 -TestNumbers 4
-    T1135 - 3,Invoke-AtomicTest T1135 -TestNumbers 3
+    T1046 - 5,Invoke-AtomicTest T1046 -TestNumbers 5
+    T1046 - 6,Invoke-AtomicTest T1046 -TestNumbers 6
+    T1046 - 7,Invoke-AtomicTest T1046 -TestNumbers 7
+    T1046 - 8,Invoke-AtomicTest T1046 -TestNumbers 8
+    T1046 - 10,Invoke-AtomicTest T1046 -TestNumbers 10
+    T1046 - 11,Invoke-AtomicTest T1046 -TestNumbers 11
     T1135 - 4,Invoke-AtomicTest T1135 -TestNumbers 4
     T1135 - 5,Invoke-AtomicTest T1135 -TestNumbers 5
     T1135 - 6,Invoke-AtomicTest T1135 -TestNumbers 6
+    T1135 - 7,Invoke-AtomicTest T1135 -TestNumbers 7
+    T1135 - 8,Invoke-AtomicTest T1135 -TestNumbers 8
+    T1135 - 9,Invoke-AtomicTest T1135 -TestNumbers 9
+    T1135 - 10,Invoke-AtomicTest T1135 -TestNumbers 10
+    T1135 - 11,Invoke-AtomicTest T1135 -TestNumbers 11
+    T1135 - 12,Invoke-AtomicTest T1135 -TestNumbers 12
     T1201 - 5,Invoke-AtomicTest T1201 -TestNumbers 5
     T1201 - 6,Invoke-AtomicTest T1201 -TestNumbers 6
     T1120 - 1,Invoke-AtomicTest T1120 -TestNumbers 1
+    T1120 - 2,Invoke-AtomicTest T1120 -TestNumbers 2
+    T1120 - 3,Invoke-AtomicTest T1120 -TestNumbers 3
+    T1120 - 4,Invoke-AtomicTest T1120 -TestNumbers 4
     T1057 - 2,Invoke-AtomicTest T1057 -TestNumbers 2
+    T1057 - 3,Invoke-AtomicTest T1057 -TestNumbers 3
+    T1057 - 4,Invoke-AtomicTest T1057 -TestNumbers 4
+    T1057 - 5,Invoke-AtomicTest T1057 -TestNumbers 5  
+    T1057 - 6,Invoke-AtomicTest T1057 -TestNumbers 6
+    T1057 - 7,Invoke-AtomicTest T1057 -TestNumbers 7
+    T1057 - 8,Invoke-AtomicTest T1057 -TestNumbers 8
+    T1057 - 9,Invoke-AtomicTest T1057 -TestNumbers 9
     T1012 - 1,Invoke-AtomicTest T1012 -TestNumbers 1
+    T1012 - 2,Invoke-AtomicTest T1012 -TestNumbers 2
+    T1012 - 3,Invoke-AtomicTest T1012 -TestNumbers 3
+    T1012 - 4,Invoke-AtomicTest T1012 -TestNumbers 4
+    T1012 - 5,Invoke-AtomicTest T1012 -TestNumbers 5
+    T1012 - 6,Invoke-AtomicTest T1012 -TestNumbers 6
     T1018 - 1,Invoke-AtomicTest T1018 -TestNumbers 1
     T1018 - 2,Invoke-AtomicTest T1018 -TestNumbers 2
     T1018 - 3,Invoke-AtomicTest T1018 -TestNumbers 3
@@ -2988,6 +5572,13 @@ sources:
     T1018 - 9,Invoke-AtomicTest T1018 -TestNumbers 9
     T1018 - 10,Invoke-AtomicTest T1018 -TestNumbers 10
     T1018 - 11,Invoke-AtomicTest T1018 -TestNumbers 11
+    T1018 - 16,Invoke-AtomicTest T1018 -TestNumbers 16
+    T1018 - 17,Invoke-AtomicTest T1018 -TestNumbers 17
+    T1018 - 18,Invoke-AtomicTest T1018 -TestNumbers 18
+    T1018 - 19,Invoke-AtomicTest T1018 -TestNumbers 19
+    T1018 - 20,Invoke-AtomicTest T1018 -TestNumbers 20
+    T1018 - 21,Invoke-AtomicTest T1018 -TestNumbers 21
+    T1018 - 22,Invoke-AtomicTest T1018 -TestNumbers 22
     T1518.001 - 1,Invoke-AtomicTest T1518.001 -TestNumbers 1
     T1518.001 - 2,Invoke-AtomicTest T1518.001 -TestNumbers 2
     T1518.001 - 5,Invoke-AtomicTest T1518.001 -TestNumbers 5
@@ -2998,7 +5589,30 @@ sources:
     T1082 - 6,Invoke-AtomicTest T1082 -TestNumbers 6
     T1082 - 8,Invoke-AtomicTest T1082 -TestNumbers 8
     T1082 - 9,Invoke-AtomicTest T1082 -TestNumbers 9
-    T1082 - 10,Invoke-AtomicTest T1082 -TestNumbers 10
+    T1082 - 10,Invoke-AtomicTest T1082 -TestNumbers 10.
+    T1082 - 14,Invoke-AtomicTest T1082 -TestNumbers 14
+    T1082 - 15,Invoke-AtomicTest T1082 -TestNumbers 15
+    T1082 - 16,Invoke-AtomicTest T1082 -TestNumbers 16
+    T1082 - 17,Invoke-AtomicTest T1082 -TestNumbers 17
+    T1082 - 18,Invoke-AtomicTest T1082 -TestNumbers 18
+    T1082 - 19,Invoke-AtomicTest T1082 -TestNumbers 19
+    T1082 - 20,Invoke-AtomicTest T1082 -TestNumbers 20
+    T1082 - 21,Invoke-AtomicTest T1082 -TestNumbers 21
+    T1082 - 22,Invoke-AtomicTest T1082 -TestNumbers 22
+    T1082 - 23,Invoke-AtomicTest T1082 -TestNumbers 23
+    T1082 - 27,Invoke-AtomicTest T1082 -TestNumbers 27
+    T1082 - 28,Invoke-AtomicTest T1082 -TestNumbers 28
+    T1082 - 29,Invoke-AtomicTest T1082 -TestNumbers 29
+    T1082 - 30,Invoke-AtomicTest T1082 -TestNumbers 30
+    T1082 - 31,Invoke-AtomicTest T1082 -TestNumbers 31
+    T1082 - 32,Invoke-AtomicTest T1082 -TestNumbers 32
+    T1082 - 34,Invoke-AtomicTest T1082 -TestNumbers 34
+    T1082 - 35,Invoke-AtomicTest T1082 -TestNumbers 35
+    T1082 - 36,Invoke-AtomicTest T1082 -TestNumbers 36
+    T1082 - 37,Invoke-AtomicTest T1082 -TestNumbers 37
+    T1082 - 38,Invoke-AtomicTest T1082 -TestNumbers 38
+    T1082 - 39,Invoke-AtomicTest T1082 -TestNumbers 39
+    T1082 - 40,Invoke-AtomicTest T1082 -TestNumbers 40
     T1016 - 1,Invoke-AtomicTest T1016 -TestNumbers 1
     T1016 - 2,Invoke-AtomicTest T1016 -TestNumbers 2
     T1016 - 4,Invoke-AtomicTest T1016 -TestNumbers 4
@@ -3010,10 +5624,18 @@ sources:
     T1049 - 4,Invoke-AtomicTest T1049 -TestNumbers 4
     T1033 - 1,Invoke-AtomicTest T1033 -TestNumbers 1
     T1033 - 3,Invoke-AtomicTest T1033 -TestNumbers 3
+    T1033 - 4,Invoke-AtomicTest T1033 -TestNumbers 4
+    T1033 - 5,Invoke-AtomicTest T1033 -TestNumbers 5
+    T1033 - 6,Invoke-AtomicTest T1033 -TestNumbers 6
+    T1033 - 7,Invoke-AtomicTest T1033 -TestNumbers 7
     T1007 - 1,Invoke-AtomicTest T1007 -TestNumbers 1
     T1007 - 2,Invoke-AtomicTest T1007 -TestNumbers 2
+    T1007 - 3,Invoke-AtomicTest T1007 -TestNumbers 3
     T1124 - 1,Invoke-AtomicTest T1124 -TestNumbers 1
     T1124 - 2,Invoke-AtomicTest T1124 -TestNumbers 2
+    T1124 - 4,Invoke-AtomicTest T1124 -TestNumbers 4
+    T1124 - 5,Invoke-AtomicTest T1124 -TestNumbers 5
+    T1124 - 6,Invoke-AtomicTest T1124 -TestNumbers 6
     T1071.004 - 1,Invoke-AtomicTest T1071.004 -TestNumbers 1
     T1071.004 - 2,Invoke-AtomicTest T1071.004 -TestNumbers 2
     T1071.004 - 3,Invoke-AtomicTest T1071.004 -TestNumbers 3
@@ -3038,17 +5660,33 @@ sources:
     T1572 - 1,Invoke-AtomicTest T1572 -TestNumbers 1
     T1572 - 2,Invoke-AtomicTest T1572 -TestNumbers 2
     T1572 - 3,Invoke-AtomicTest T1572 -TestNumbers 3
+    T1572 - 4,Invoke-AtomicTest T1572 -TestNumbers 4
     T1219 - 1,Invoke-AtomicTest T1219 -TestNumbers 1
     T1219 - 2,Invoke-AtomicTest T1219 -TestNumbers 2
     T1219 - 3,Invoke-AtomicTest T1219 -TestNumbers 3
     T1219 - 4,Invoke-AtomicTest T1219 -TestNumbers 4
     T1219 - 5,Invoke-AtomicTest T1219 -TestNumbers 5
+    T1219 - 6,Invoke-AtomicTest T1219 -TestNumbers 6
+    T1219 - 7,Invoke-AtomicTest T1219 -TestNumbers 7
+    T1219 - 8,Invoke-AtomicTest T1219 -TestNumbers 8
+    T1219 - 9,Invoke-AtomicTest T1219 -TestNumbers 9
+    T1219 - 10,Invoke-AtomicTest T1219 -TestNumbers 10
+    T1219 - 11,Invoke-AtomicTest T1219 -TestNumbers 11
+    T1219 - 12,Invoke-AtomicTest T1219 -TestNumbers 12
+    T1219 - 13,Invoke-AtomicTest T1219 -TestNumbers 13
+    T1219 - 14,Invoke-AtomicTest T1219 -TestNumbers 14
+    T1219 - 15,Invoke-AtomicTest T1219 -TestNumbers 15
     T1132.001 - 2,Invoke-AtomicTest T1132.001 -TestNumbers 2
     T1071.001 - 1,Invoke-AtomicTest T1071.001 -TestNumbers 1
     T1071.001 - 2,Invoke-AtomicTest T1071.001 -TestNumbers 2
     T1559.002 - 1,Invoke-AtomicTest T1559.002 -TestNumbers 1
     T1559.002 - 2,Invoke-AtomicTest T1559.002 -TestNumbers 2
     T1559.002 - 3,Invoke-AtomicTest T1559.002 -TestNumbers 3
+    T1559 - 1,Invoke-AtomicTest T1559 -TestNumbers 1 
+    T1559 - 2,Invoke-AtomicTest T1559 -TestNumbers 2
+    T1559 - 3,Invoke-AtomicTest T1559 -TestNumbers 3
+    T1559 - 4,Invoke-AtomicTest T1559 -TestNumbers 4
+    T1559 - 5,Invoke-AtomicTest T1559 -TestNumbers 5
     T1204.002 - 1,Invoke-AtomicTest T1204.002 -TestNumbers 1
     T1204.002 - 2,Invoke-AtomicTest T1204.002 -TestNumbers 2
     T1204.002 - 3,Invoke-AtomicTest T1204.002 -TestNumbers 3
@@ -3058,7 +5696,13 @@ sources:
     T1204.002 - 7,Invoke-AtomicTest T1204.002 -TestNumbers 7
     T1204.002 - 8,Invoke-AtomicTest T1204.002 -TestNumbers 8
     T1204.002 - 9,Invoke-AtomicTest T1204.002 -TestNumbers 9
+    T1204.002 - 10,Invoke-AtomicTest T1204.002 -TestNumbers 10
+    T1204.002 - 11,Invoke-AtomicTest T1204.002 -TestNumbers 11
     T1106 - 1,Invoke-AtomicTest T1106 -TestNumbers 1
+    T1106 - 2,Invoke-AtomicTest T1106 -TestNumbers 2
+    T1106 - 3,Invoke-AtomicTest T1106 -TestNumbers 3
+    T1106 - 4,Invoke-AtomicTest T1106 -TestNumbers 4
+    T1106 - 5,Invoke-AtomicTest T1106 -TestNumbers 5
     T1059.001 - 1,Invoke-AtomicTest T1059.001 -TestNumbers 1
     T1059.001 - 2,Invoke-AtomicTest T1059.001 -TestNumbers 2
     T1059.001 - 3,Invoke-AtomicTest T1059.001 -TestNumbers 3
@@ -3082,7 +5726,14 @@ sources:
     T1059.001 - 21,Invoke-AtomicTest T1059.001 -TestNumbers 21
     T1569.002 - 1,Invoke-AtomicTest T1569.002 -TestNumbers 1
     T1569.002 - 2,Invoke-AtomicTest T1569.002 -TestNumbers 2
+    T1569.002 - 4,Invoke-AtomicTest T1569.002 -TestNumbers 4
+    T1569.002 - 5,Invoke-AtomicTest T1569.002 -TestNumbers 5
+    T1569.002 - 6,Invoke-AtomicTest T1569.002 -TestNumbers 6
+    T1569.002 - 7,Invoke-AtomicTest T1569.002 -TestNumbers 7
+    T1569.002 - 8,Invoke-AtomicTest T1569.002 -TestNumbers 8
     T1072 - 1,Invoke-AtomicTest T1072 -TestNumbers 1
+    T1072 - 2,Invoke-AtomicTest T1072 -TestNumbers 2
+    T1072 - 3,Invoke-AtomicTest T1072 -TestNumbers 3        
     T1059.005 - 1,Invoke-AtomicTest T1059.005 -TestNumbers 1
     T1059.005 - 2,Invoke-AtomicTest T1059.005 -TestNumbers 2
     T1059.005 - 3,Invoke-AtomicTest T1059.005 -TestNumbers 3
@@ -3099,13 +5750,16 @@ sources:
     T1047 - 8,Invoke-AtomicTest T1047 -TestNumbers 8
     T1047 - 9,Invoke-AtomicTest T1047 -TestNumbers 9
     T1020 - 1,Invoke-AtomicTest T1020 -TestNumbers 1
+    T1020 - 2,Invoke-AtomicTest T1020 -TestNumbers 2
     T1048 - 3,Invoke-AtomicTest T1048 -TestNumbers 3
     T1041 - 1,Invoke-AtomicTest T1041 -TestNumbers 1
+    T1041 - 2,Invoke-AtomicTest T1041 -TestNumbers 2
     T1048.003 - 2,Invoke-AtomicTest T1048.003 -TestNumbers 2
     T1048.003 - 4,Invoke-AtomicTest T1048.003 -TestNumbers 4
     T1048.003 - 5,Invoke-AtomicTest T1048.003 -TestNumbers 5
     T1567 - 1,Invoke-AtomicTest T1567 -TestNumbers 1
     T1021.003 - 1,Invoke-AtomicTest T1021.003 -TestNumbers 1
+    T1021.003 - 2,Invoke-AtomicTest T1021.003 -TestNumbers 2
     T1563.002 - 1,Invoke-AtomicTest T1563.002 -TestNumbers 1
     T1021.001 - 1,Invoke-AtomicTest T1021.001 -TestNumbers 1
     T1021.001 - 2,Invoke-AtomicTest T1021.001 -TestNumbers 2
