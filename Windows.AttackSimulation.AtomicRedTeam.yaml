@@ -707,14 +707,6 @@ parameters:
   description: WinPwn - PowerSharpPack - Kerberoasting Using Rubeus
   type: bool
 
-
-
-
-
-
-
-
-
 - name: T1056.001 - 1
   description: Keylogging - Input Capture
   type: bool
@@ -942,14 +934,6 @@ parameters:
   description: Export Certificates with Mimikatz
   type: bool
 
-
-
-
-
-
-
-
-
 - name: T1003.002 - 1
   description: Security Account Manager - Registry dump of SAM, creds, and 
     secrets
@@ -1019,13 +1003,6 @@ parameters:
 - name: T1560.001 - 11
   description: Compress a File for Exfiltration using Makecab
   type: bool
-
-
-
-
-
-
-
 
 - name: T1123 - 1
   description: Audio Capture - using device audio capture commandlet
@@ -1159,7 +1136,6 @@ parameters:
   description: Remote Process Injection with Go using NtQueueApcThreadEx WinAPI
   type: bool
 
-
 - name: T1053.002 - 1
   description: At (Windows) - At.exe Scheduled task
   type: bool
@@ -1277,7 +1253,6 @@ parameters:
   description: UAC bypassed by Utilizing ProgIDs registry.
   type: bool
 
-
 - name: T1574.012 - 1
   description: COR_PROFILER - User scope COR_PROFILER
   type: bool
@@ -1329,7 +1304,6 @@ parameters:
 - name: T1574.001 - 6
   description: DLL Search Order Hijacking and Side-Loading via KeyScrambler.exe
   type: bool
-
 
 - name: T1574.002 - 1
   description: DLL Side-Loading - DLL Side-Loading using the Notepad++ GUP.exe 
@@ -2045,7 +2019,6 @@ parameters:
   description: Disable EventLog-Application ETW Provider Via Registry - PowerShell
   type: bool
 
-
 - name: T1070.004 - 4
   description: File Deletion - Delete a single file - Windows cmd
   type: bool
@@ -2073,19 +2046,22 @@ parameters:
 - name: T1564.001 - 3
   description: Create Windows System File with Attrib
   type: bool
+  
 - name: T1564.001 - 4
   description: Create Windows Hidden File with Attrib
   type: bool
+  
 - name: T1564.001 - 8
   description: Hide Files Through Registry
   type: bool
+  
 - name: T1564.001 - 9
   description: Create Windows Hidden File with PowerShell
   type: bool
+  
 - name: T1564.001 - 10
   description: Create Windows System File with PowerShell
   type: bool
-
 
 - name: T1564.003 - 1
   description: Hidden PowerShell Window launching calc.exe
@@ -2118,7 +2094,6 @@ parameters:
 - name: T1564 - 5
   description: Execute command via NirCmd (e.g. hide tray clock)
   type: bool
-
 
 - name: T1070 - 1
   description: Indicator Removal on Host - Indicator Removal using FSUtil
@@ -2912,7 +2887,6 @@ parameters:
   description: Rundll32 with Control_RunDLL
   type: bool
 
-
 - name: T1218.011 - 13
   description: Rundll32 with desk.cpl
   type: bool
@@ -2928,7 +2902,6 @@ parameters:
 - name: T1218.011 - 16
   description: Rundll32 execute payload by calling RouteTheCall
   type: bool
-
 
 - name: T1218 - 1
   description: Signed Binary Proxy Execution - mavinject - Inject DLL into 
@@ -3063,7 +3036,6 @@ parameters:
 - name: T1098 - 2
   description: Account Manipulation - Domain Account and Group Manipulate
   type: bool
-
 
 - name: T1098 - 9
   description: Password Change on Directory Service Restore Mode (DSRM) Account
@@ -3330,13 +3302,6 @@ parameters:
   description: ESXi - vim-cmd Used to Power Off VMs
   type: bool
 
-
-
-
-
-
-
-
 - name: T1010 - 1
   description: Application Window Discovery - List Process Main Windows - C# 
     .NET
@@ -3414,12 +3379,10 @@ parameters:
 
 - name: T1087.002 - 11
   description: Get-DomainUser with PowerView
- 
   type: bool
 
 - name: T1087.002 - 12
   description: Enumerate Active Directory Users with ADSISearcher
-
   type: bool
 
 - name: T1087.002 - 13
@@ -3674,8 +3637,6 @@ parameters:
   description: Enumerate Active Directory Password Policy with get-addefaultdomainpasswordpolicy
   type: bool
 
-
-
 - name: T1120 - 1
   description: Peripheral Device Discovery - Win32_PnPEntity Hardware Inventory
   type: bool
@@ -3698,7 +3659,7 @@ parameters:
 
 - name: T1057 - 3
   description: Process Discovery - Get-Process
-
+  type: bool
 
 - name: T1057 - 4
   description: Process Discovery - get-wmiObject
@@ -3748,7 +3709,6 @@ parameters:
   description: Inspect SystemStartOptions Value in Registry
   type: bool
 
-  
 - name: T1018 - 1
   description: Remote System Discovery - Remote System Discovery - net
   type: bool
@@ -3807,21 +3767,17 @@ parameters:
     Domain Controller Objects
   type: bool
 
-
 - name: T1018 - 20
   description: Get-WmiObject to Enumerate Domain Controllers
   type: bool
-
 
 - name: T1018 - 21
   description: Remote System Discovery - net group Domain Controller
   type: bool
 
-
 - name: T1018 - 22
   description: Enumerate Remote Hosts with Netscan
   type: bool
-
 
 - name: T1518.001 - 1
   description: Security Software Discovery - Security Software Discovery
@@ -4253,7 +4209,6 @@ parameters:
   description: Dynamic Data Exchange - DDEAUTO
   type: bool
 
-
 - name: T1559 - 1
   description: Cobalt Strike Artifact Kit pipe
   type: bool
@@ -4442,7 +4397,6 @@ parameters:
   description: Discover System Language with Powershell
   type: bool
 
-
 - name: T1059.001 - 19
   description: PowerShell - PowerShell Command Execution
   type: bool
@@ -4482,7 +4436,6 @@ parameters:
 - name: T1569.002 - 8
   description: Pipe Creation - PsExec Tool Execution From Suspicious Locations (Windows)
   type: bool
-
 
 - name: T1072 - 1
   description: Software Deployment Tools - Radmin Viewer Utility
@@ -4581,7 +4534,6 @@ parameters:
   description: Text Based Data Exfiltration using DNS subdomains
   type: bool
 
-
 - name: T1048.003 - 2
   description: Exfiltration Over Unencrypted/Obfuscated Non-C2 Protocol - 
     Exfiltration Over Alternative Protocol - ICMP
@@ -4610,7 +4562,6 @@ parameters:
 - name: T1021.003 - 2
   description: PowerShell Lateral Movement Using Excel Application Object
   type: bool
-
 
 - name: T1563.002 - 1
   description: RDP Hijacking - RDP hijacking
@@ -4672,7 +4623,6 @@ parameters:
   description: Spearphishing Attachment - Word spawned a command shell and used 
     an IP address in the command line
   type: bool
-
 
 precondition: SELECT OS From info() where OS = 'windows'
 
