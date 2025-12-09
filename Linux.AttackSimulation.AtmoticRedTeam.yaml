@@ -61,7 +61,7 @@ parameters:
 
     - name: Cleanup
       description: Clean up execution artifacts
-      default: Y
+      default: N
       type: bool
 
     - name: RunAll
